@@ -1,0 +1,8 @@
+# Exports folder is entirely generated
+Exports/
+
+# User settings are per user
+UserSettings/
+
+# Local storage for testing persistent storage
+Storage/
