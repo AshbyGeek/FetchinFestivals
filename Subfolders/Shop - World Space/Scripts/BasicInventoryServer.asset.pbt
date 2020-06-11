@@ -1,5 +1,5 @@
-Id: 15565680221026194443
-Name: "CursorClient"
+Id: 6585667048802179351
+Name: "BasicInventoryServer"
 PlatformAssetType: 3
 TextAsset {
 }

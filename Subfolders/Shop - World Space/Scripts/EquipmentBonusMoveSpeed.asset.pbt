@@ -1,5 +1,5 @@
-Id: 15565680221026194443
-Name: "CursorClient"
+Id: 11899129538824816343
+Name: "EquipmentBonusMoveSpeed"
 PlatformAssetType: 3
 TextAsset {
 }

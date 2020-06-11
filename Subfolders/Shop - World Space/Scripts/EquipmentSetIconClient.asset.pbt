@@ -1,5 +1,5 @@
-Id: 15565680221026194443
-Name: "CursorClient"
+Id: 17747211603749013980
+Name: "EquipmentSetIconClient"
 PlatformAssetType: 3
 TextAsset {
 }

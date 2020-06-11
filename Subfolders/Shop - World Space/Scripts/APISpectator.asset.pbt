@@ -1,5 +1,5 @@
-Id: 15565680221026194443
-Name: "CursorClient"
+Id: 10257936103280998418
+Name: "APISpectator"
 PlatformAssetType: 3
 TextAsset {
 }

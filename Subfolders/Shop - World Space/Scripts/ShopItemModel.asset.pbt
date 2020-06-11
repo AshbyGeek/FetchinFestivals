@@ -1,5 +1,5 @@
-Id: 15565680221026194443
-Name: "CursorClient"
+Id: 15378561657797158844
+Name: "ShopItemModel"
 PlatformAssetType: 3
 TextAsset {
 }

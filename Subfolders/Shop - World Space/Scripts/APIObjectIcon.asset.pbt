@@ -1,5 +1,5 @@
-Id: 15565680221026194443
-Name: "CursorClient"
+Id: 14869249783105654295
+Name: "APIObjectIcon"
 PlatformAssetType: 3
 TextAsset {
 }

@@ -1,5 +1,5 @@
-Id: 15565680221026194443
-Name: "CursorClient"
+Id: 4488176995635213615
+Name: "LootPickup"
 PlatformAssetType: 3
 TextAsset {
 }

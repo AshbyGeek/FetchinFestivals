@@ -1,5 +1,5 @@
-Id: 15565680221026194443
-Name: "CursorClient"
+Id: 16508639434793622039
+Name: "ResourcePickupServer"
 PlatformAssetType: 3
 TextAsset {
 }

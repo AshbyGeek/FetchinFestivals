@@ -1,5 +1,5 @@
-Id: 15565680221026194443
-Name: "CursorClient"
+Id: 16142698762426707624
+Name: "WeaponPickupTriggerServer"
 PlatformAssetType: 3
 TextAsset {
 }
