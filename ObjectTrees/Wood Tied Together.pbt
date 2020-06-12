@@ -70,11 +70,11 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 1700
-      Y: 40
+      X: 2000
       Z: 50
     }
     Rotation {
+      Yaw: -179.999954
     }
     Scale {
       X: 1
@@ -147,7 +147,8 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 1700
+      X: 2000
+      Y: -80
       Z: 50
     }
     Rotation {
