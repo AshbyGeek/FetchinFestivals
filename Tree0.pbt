@@ -23,6 +23,9 @@ Objects {
   ChildIds: 12781611833892941547
   ChildIds: 17727289607405800977
   ChildIds: 130087607021240312
+  ChildIds: 8924461304662815761
+  ChildIds: 14112141440295821729
+  ChildIds: 15666721281899951301
   ChildIds: 10321208027113496032
   ChildIds: 3034767076073914170
   ChildIds: 14336884924745334471
@@ -144,7 +147,7 @@ Objects {
     Width: 166
     Height: 47
     UIX: 40
-    UIY: 20
+    UIY: 100
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -2595,6 +2598,416 @@ Objects {
   }
 }
 Objects {
+  Id: 15666721281899951301
+  Name: "Monkey"
+  Transform {
+    Location {
+      X: -1150
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 3462734883564020552
+  ChildIds: 17271063117019348344
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16335829303360349604
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17271063117019348344
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15666721281899951301
+  ChildIds: 1842583236905921005
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 1842583236905921005
+  Name: "MonkeyDialogue"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17271063117019348344
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 13588512645616318325
+    }
+  }
+}
+Objects {
+  Id: 3462734883564020552
+  Name: "Monkey Trigger"
+  Transform {
+    Location {
+      X: 7.5
+      Z: 37.5
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.49999976
+      Y: 1.49999976
+      Z: 0.749999881
+    }
+  }
+  ParentId: 15666721281899951301
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:DialogueKey"
+      String: "Monkey"
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    Interactable: true
+    InteractionLabel: "Speak"
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 14112141440295821729
+  Name: "Taco"
+  Transform {
+    Location {
+      X: 250
+      Y: 400
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 6574062289219119204
+  ChildIds: 14201015317196115644
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9718737427175942046
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14201015317196115644
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14112141440295821729
+  ChildIds: 15173331113514999834
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 15173331113514999834
+  Name: "TacoScript"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14201015317196115644
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 13025003980256521799
+    }
+  }
+}
+Objects {
+  Id: 6574062289219119204
+  Name: "Taco Trigger"
+  Transform {
+    Location {
+      Y: -5
+      Z: 50
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.49999976
+      Y: 1.49999976
+      Z: 0.749999881
+    }
+  }
+  ParentId: 14112141440295821729
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:DialogueKey"
+      String: "Taco"
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    Interactable: true
+    InteractionLabel: "Speak"
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 8924461304662815761
+  Name: "Bird"
+  Transform {
+    Location {
+      X: -700
+      Y: -1100
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 15982224430961608586
+  ChildIds: 2155084145711253386
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9878632468415476141
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 2155084145711253386
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8924461304662815761
+  ChildIds: 3592429002850377245
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 3592429002850377245
+  Name: "BirdDialogue"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2155084145711253386
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 15598075550265446675
+      }
+    }
+    Overrides {
+      Name: "cs:CharacterName"
+      String: "Bird Boi"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14443802209443782846
+    }
+  }
+}
+Objects {
+  Id: 15982224430961608586
+  Name: "Bird Trigger"
+  Transform {
+    Location {
+      X: 25
+      Y: -2.5
+      Z: 37.5
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.49999976
+      Y: 1.49999976
+      Z: 0.749999881
+    }
+  }
+  ParentId: 8924461304662815761
+  UnregisteredParameters {
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    Interactable: true
+    InteractionLabel: "Speak"
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
   Id: 130087607021240312
   Name: "Dialogue System"
   Transform {
@@ -2616,13 +3029,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Dialogue"
-  }
-  InstanceHistory {
-    SelfId: 130087607021240312
-    SubobjectId: 16664705860083564540
-    InstanceId: 17476429481291465810
-    TemplateId: 9792963186493494582
-    WasRoot: true
   }
 }
 Objects {

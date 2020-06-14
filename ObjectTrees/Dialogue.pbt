@@ -1,11 +1,10 @@
 Name: "Dialogue"
 RootId: 130087607021240312
 Objects {
-  Id: 13786767316080580826
-  Name: "Cube - Arcade 04"
+  Id: 5072009049571754911
+  Name: "ServerContext"
   Transform {
     Location {
-      X: 200
     }
     Rotation {
     }
@@ -16,59 +15,15 @@ Objects {
     }
   }
   ParentId: 130087607021240312
+  ChildIds: 10802825566280950288
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CoreMesh {
-    MeshAsset {
-      Id: 13311673619569108546
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 2387981379500639893
-  Name: "DialogueTriggers"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.5
-      Y: 0.5
-      Z: 0.5
-    }
-  }
-  ParentId: 130087607021240312
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "DialogueTriggers"
-  }
-  InstanceHistory {
-    SelfId: 2387981379500639893
-    SubobjectId: 14387052730091488913
-    InstanceId: 17476429481291465810
-    TemplateId: 9792963186493494582
+  NetworkContext {
+    Type: Server
   }
 }
 Objects {
@@ -85,16 +40,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 130087607021240312
+  ParentId: 5072009049571754911
   UnregisteredParameters {
-    Overrides {
-      Name: "cs:Triggers"
-      ObjectReference {
-        SelfId: 2387981379500639893
-      }
-    }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -103,14 +51,8 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 4885141236833222926
+      Id: 11480597617361026027
     }
-  }
-  InstanceHistory {
-    SelfId: 10802825566280950288
-    SubobjectId: 8314098800279413268
-    InstanceId: 17476429481291465810
-    TemplateId: 9792963186493494582
   }
 }
 Objects {
@@ -141,12 +83,6 @@ Objects {
   }
   NetworkContext {
   }
-  InstanceHistory {
-    SelfId: 8687260964826981863
-    SubobjectId: 11386680410070705635
-    InstanceId: 17476429481291465810
-    TemplateId: 9792963186493494582
-  }
 }
 Objects {
   Id: 15955770971983839977
@@ -164,24 +100,6 @@ Objects {
   }
   ParentId: 8687260964826981863
   UnregisteredParameters {
-    Overrides {
-      Name: "cs:TacoImage"
-      AssetReference {
-        Id: 14412444001205775827
-      }
-    }
-    Overrides {
-      Name: "cs:BirdImage"
-      AssetReference {
-        Id: 15598075550265446675
-      }
-    }
-    Overrides {
-      Name: "cs:MonkeyImage"
-      AssetReference {
-        Id: 10665469673159305108
-      }
-    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -191,19 +109,13 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 9492479154233053052
+      Id: 5144197312332475655
     }
-  }
-  InstanceHistory {
-    SelfId: 15955770971983839977
-    SubobjectId: 4315729904833315565
-    InstanceId: 17476429481291465810
-    TemplateId: 9792963186493494582
   }
 }
 Objects {
   Id: 9858143610041134539
-  Name: "DialogueManagerClient"
+  Name: "DialogueManager"
   Transform {
     Location {
     }
@@ -242,15 +154,15 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:DialogueLookup"
-      ObjectReference {
-        SelfId: 15955770971983839977
-      }
-    }
-    Overrides {
       Name: "cs:MenuOptionParent"
       ObjectReference {
         SelfId: 7400027039299425504
+      }
+    }
+    Overrides {
+      Name: "cs:DialogueLookup"
+      ObjectReference {
+        SelfId: 15955770971983839977
       }
     }
   }
@@ -262,14 +174,8 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 6643753090364781252
+      Id: 863274793379134591
     }
-  }
-  InstanceHistory {
-    SelfId: 9858143610041134539
-    SubobjectId: 7946017920994323919
-    InstanceId: 17476429481291465810
-    TemplateId: 9792963186493494582
   }
 }
 Objects {
@@ -309,7 +215,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
     RenderTransformPivot {
@@ -319,12 +225,6 @@ Objects {
     }
     Canvas {
     }
-  }
-  InstanceHistory {
-    SelfId: 9143849763048436068
-    SubobjectId: 10984207727563272544
-    InstanceId: 17476429481291465810
-    TemplateId: 9792963186493494582
   }
 }
 Objects {
@@ -364,6 +264,30 @@ Objects {
         SelfId: 7012160503514876063
       }
     }
+    Overrides {
+      Name: "cs:TextPanel"
+      ObjectReference {
+        SelfId: 5522825179765106313
+      }
+    }
+    Overrides {
+      Name: "cs:LeftSpeaker"
+      ObjectReference {
+        SelfId: 4853203196933380827
+      }
+    }
+    Overrides {
+      Name: "cs:RightSpeaker"
+      ObjectReference {
+        SelfId: 6945712707688046042
+      }
+    }
+    Overrides {
+      Name: "cs:DialogueOptionPanel"
+      ObjectReference {
+        SelfId: 7400027039299425504
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -395,12 +319,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 7400027039299425504
-    SubobjectId: 9239391029783860452
-    InstanceId: 17476429481291465810
-    TemplateId: 9792963186493494582
-  }
 }
 Objects {
   Id: 7012160503514876063
@@ -423,7 +341,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
     Width: 200
@@ -441,10 +359,10 @@ Objects {
       }
       FontSize: 20
       ButtonColor {
-        R: 0.7
+        R: 1
         G: 1
-        B: 0.707947
-        A: 0.530000031
+        B: 1
+        A: 1
       }
       HoveredColor {
         R: 0.7
@@ -465,7 +383,7 @@ Objects {
         A: 1
       }
       Brush {
-        Id: 3402899792385906025
+        Id: 13840926887762805897
       }
       IsButtonEnabled: true
     }
@@ -481,12 +399,6 @@ Objects {
         }
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 7012160503514876063
-    SubobjectId: 9789407776144853147
-    InstanceId: 17476429481291465810
-    TemplateId: 9792963186493494582
   }
 }
 Objects {
@@ -510,7 +422,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
     Width: 200
@@ -528,10 +440,10 @@ Objects {
       }
       FontSize: 20
       ButtonColor {
-        R: 0.7
+        R: 1
         G: 1
-        B: 0.707947
-        A: 0.530000031
+        B: 1
+        A: 1
       }
       HoveredColor {
         R: 0.7
@@ -552,7 +464,7 @@ Objects {
         A: 1
       }
       Brush {
-        Id: 3402899792385906025
+        Id: 13840926887762805897
       }
       IsButtonEnabled: true
     }
@@ -568,12 +480,6 @@ Objects {
         }
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 5961969013098092670
-    SubobjectId: 12986111281325004922
-    InstanceId: 17476429481291465810
-    TemplateId: 9792963186493494582
   }
 }
 Objects {
@@ -597,7 +503,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
     Width: 200
@@ -615,10 +521,10 @@ Objects {
       }
       FontSize: 20
       ButtonColor {
-        R: 0.7
+        R: 1
         G: 1
-        B: 0.707947
-        A: 0.530000031
+        B: 1
+        A: 1
       }
       HoveredColor {
         R: 0.7
@@ -639,7 +545,7 @@ Objects {
         A: 1
       }
       Brush {
-        Id: 3402899792385906025
+        Id: 13840926887762805897
       }
       IsButtonEnabled: true
     }
@@ -655,12 +561,6 @@ Objects {
         }
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 1225639145086967911
-    SubobjectId: 17836677976783069283
-    InstanceId: 17476429481291465810
-    TemplateId: 9792963186493494582
   }
 }
 Objects {
@@ -691,6 +591,30 @@ Objects {
       Name: "cs:NameText"
       ObjectReference {
         SelfId: 10919866330073698077
+      }
+    }
+    Overrides {
+      Name: "cs:TextPanel"
+      ObjectReference {
+        SelfId: 5522825179765106313
+      }
+    }
+    Overrides {
+      Name: "cs:LeftSpeaker"
+      ObjectReference {
+        SelfId: 4853203196933380827
+      }
+    }
+    Overrides {
+      Name: "cs:RightSpeaker"
+      ObjectReference {
+        SelfId: 6945712707688046042
+      }
+    }
+    Overrides {
+      Name: "cs:DialogueOptionPanel"
+      ObjectReference {
+        SelfId: 7400027039299425504
       }
     }
   }
@@ -724,12 +648,6 @@ Objects {
         }
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 6945712707688046042
-    SubobjectId: 9722960135992729054
-    InstanceId: 17476429481291465810
-    TemplateId: 9792963186493494582
   }
 }
 Objects {
@@ -782,12 +700,6 @@ Objects {
         }
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 15140946842452650121
-    SubobjectId: 3789135580776802445
-    InstanceId: 17476429481291465810
-    TemplateId: 9792963186493494582
   }
 }
 Objects {
@@ -848,12 +760,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 10919866330073698077
-    SubobjectId: 8143049914067341081
-    InstanceId: 17476429481291465810
-    TemplateId: 9792963186493494582
-  }
 }
 Objects {
   Id: 14930598977703288919
@@ -910,12 +816,6 @@ Objects {
         }
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 14930598977703288919
-    SubobjectId: 3008088960902127699
-    InstanceId: 17476429481291465810
-    TemplateId: 9792963186493494582
   }
 }
 Objects {
@@ -977,12 +877,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 15353876995758880218
-    SubobjectId: 3718048689239307742
-    InstanceId: 17476429481291465810
-    TemplateId: 9792963186493494582
-  }
 }
 Objects {
   Id: 2663527419832671159
@@ -1043,12 +937,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 2663527419832671159
-    SubobjectId: 14014080819806297011
-    InstanceId: 17476429481291465810
-    TemplateId: 9792963186493494582
-  }
 }
 Objects {
   Id: 4853203196933380827
@@ -1078,6 +966,30 @@ Objects {
       Name: "cs:NameText"
       ObjectReference {
         SelfId: 17584095161572977808
+      }
+    }
+    Overrides {
+      Name: "cs:TextPanel"
+      ObjectReference {
+        SelfId: 5522825179765106313
+      }
+    }
+    Overrides {
+      Name: "cs:LeftSpeaker"
+      ObjectReference {
+        SelfId: 4853203196933380827
+      }
+    }
+    Overrides {
+      Name: "cs:RightSpeaker"
+      ObjectReference {
+        SelfId: 6945712707688046042
+      }
+    }
+    Overrides {
+      Name: "cs:DialogueOptionPanel"
+      ObjectReference {
+        SelfId: 7400027039299425504
       }
     }
   }
@@ -1111,12 +1023,6 @@ Objects {
         }
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 4853203196933380827
-    SubobjectId: 11948277181924891359
-    InstanceId: 17476429481291465810
-    TemplateId: 9792963186493494582
   }
 }
 Objects {
@@ -1169,12 +1075,6 @@ Objects {
         }
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 10055518553632720234
-    SubobjectId: 7856147520914195822
-    InstanceId: 17476429481291465810
-    TemplateId: 9792963186493494582
   }
 }
 Objects {
@@ -1235,12 +1135,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 17584095161572977808
-    SubobjectId: 1336871107628641428
-    InstanceId: 17476429481291465810
-    TemplateId: 9792963186493494582
-  }
 }
 Objects {
   Id: 7826300169689848294
@@ -1297,12 +1191,6 @@ Objects {
         }
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 7826300169689848294
-    SubobjectId: 9950244721907046882
-    InstanceId: 17476429481291465810
-    TemplateId: 9792963186493494582
   }
 }
 Objects {
@@ -1364,12 +1252,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 9351836115123806007
-    SubobjectId: 7440686783191801651
-    InstanceId: 17476429481291465810
-    TemplateId: 9792963186493494582
-  }
 }
 Objects {
   Id: 1998670625203495575
@@ -1430,12 +1312,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 1998670625203495575
-    SubobjectId: 18245894132562911891
-    InstanceId: 17476429481291465810
-    TemplateId: 9792963186493494582
-  }
 }
 Objects {
   Id: 5522825179765106313
@@ -1460,7 +1336,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   Control {
     Width: 1500
@@ -1487,12 +1363,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 5522825179765106313
-    SubobjectId: 12263231895859603085
-    InstanceId: 17476429481291465810
-    TemplateId: 9792963186493494582
-  }
 }
 Objects {
   Id: 404927075844290967
@@ -1518,16 +1388,16 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 1500
-    Height: 60
-    UIX: 25
-    UIY: -25
+    Width: -15
+    Height: -15
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
+    AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
+    UseParentHeight: true
     Text {
       Label: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis, tellus at dictum ullamcorper, quam velit tempus risus, at mattis magna elit sed lectus. Praesent ut ullamcorper nulla. Nunc eleifend auctor erat, sed dignissim enim malesuada id. Integer in lectus ut metus dignissim eleifend non eu est. Pellentesque nec quam ut libero egestas vulputate. Nunc gravida blandit sapien eu pulvinar. Pellente"
       Color {
@@ -1538,6 +1408,7 @@ Objects {
         Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
+      ClipTextToSize: true
     }
     AnchorLayout {
       SelfAnchor {
@@ -1551,12 +1422,6 @@ Objects {
         }
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 404927075844290967
-    SubobjectId: 16362794971774466451
-    InstanceId: 17476429481291465810
-    TemplateId: 9792963186493494582
   }
 }
 Objects {
@@ -1594,13 +1459,13 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 3402899792385906025
+        Id: 13840926887762805897
       }
       Color {
-        R: 0.7
+        R: 1
         G: 1
-        B: 0.707947
-        A: 0.530000031
+        B: 1
+        A: 1
       }
       TeamSettings {
       }
@@ -1608,20 +1473,14 @@ Objects {
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:topleft"
+          Value: "mc:euianchor:middlecenter"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:topleft"
+          Value: "mc:euianchor:middlecenter"
         }
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 2850759004570205904
-    SubobjectId: 13908569646563327700
-    InstanceId: 17476429481291465810
-    TemplateId: 9792963186493494582
   }
 }

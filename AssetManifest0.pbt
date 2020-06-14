@@ -8,6 +8,24 @@ Assets {
   }
 }
 Assets {
+  Id: 16335829303360349604
+  Name: "Cone"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cone_001"
+  }
+}
+Assets {
+  Id: 15598075550265446675
+  Name: "Icon Chicken"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Chicken"
+  }
+}
+Assets {
   Id: 13359770314692939332
   Name: "Human Gal"
   PlatformAssetType: 17
@@ -41,6 +59,24 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "CORESKY_Skylight"
+  }
+}
+Assets {
+  Id: 9878632468415476141
+  Name: "Cone - Truncated Wide"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cone_truncated_003"
+  }
+}
+Assets {
+  Id: 9718737427175942046
+  Name: "Cube - Arcade 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_arcade_cube_001"
   }
 }
 Assets {
