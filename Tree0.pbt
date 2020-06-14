@@ -20,6 +20,7 @@ Objects {
   ChildIds: 16021957439032328522
   ChildIds: 14982843161775482339
   ChildIds: 1135401942783005417
+  ChildIds: 13549635588043766945
   ChildIds: 399548437852404293
   UnregisteredParameters {
   }
@@ -30,6 +31,32 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 13549635588043766945
+  Name: "Fishing Pole"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Fishing Pole"
   }
 }
 Objects {
