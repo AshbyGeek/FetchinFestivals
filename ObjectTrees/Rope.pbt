@@ -1,11 +1,11 @@
 Name: "Rope"
 RootId: 2564752650915221212
 Objects {
-  Id: 9260591921429838403
-  Name: "Rope1"
+  Id: 7941598583370525465
+  Name: "Rope2"
   Transform {
     Location {
-      X: 1950
+      X: 1710
       Z: 50
     }
     Rotation {
@@ -17,38 +17,6 @@ Objects {
     }
   }
   ParentId: 2564752650915221212
-  ChildIds: 12138276359150003172
-  ChildIds: 11156605101844740050
-  ChildIds: 13321207679334606403
-  ChildIds: 7284778074457917121
-  ChildIds: 3762530095724187922
-  ChildIds: 7941598583370525465
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 7941598583370525465
-  Name: "Rope2"
-  Transform {
-    Location {
-      X: -240
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9260591921429838403
   ChildIds: 10241918756636178614
   ChildIds: 5236981512111364876
   ChildIds: 17577602232968982143
@@ -386,6 +354,38 @@ Objects {
       Physics {
       }
     }
+  }
+}
+Objects {
+  Id: 9260591921429838403
+  Name: "Rope1"
+  Transform {
+    Location {
+      X: 1950
+      Z: 50
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2564752650915221212
+  ChildIds: 12138276359150003172
+  ChildIds: 11156605101844740050
+  ChildIds: 13321207679334606403
+  ChildIds: 7284778074457917121
+  ChildIds: 3762530095724187922
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
   }
 }
 Objects {

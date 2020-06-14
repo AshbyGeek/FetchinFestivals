@@ -46,62 +46,6 @@ Objects {
   }
 }
 Objects {
-  Id: 17676241608596959151
-  Name: "Object Mover Continuous"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1135401942783005417
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 9559907986640974212
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Object Mover Continuous"
-        }
-        Overrides {
-          Name: "cs:Object"
-          ObjectReference {
-            SelfId: 17532984952721758229
-          }
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 17199274940857265627
-    }
-  }
-}
-Objects {
   Id: 16025853996090276812
   Name: "Raft Experiments"
   Transform {
@@ -125,33 +69,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Raft Experiments"
-  }
-}
-Objects {
-  Id: 9463961248145815522
-  Name: "NPC movement"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1135401942783005417
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 9967730244932306024
-    }
   }
 }
 Objects {
@@ -198,8 +115,7 @@ Objects {
   Transform {
     Location {
       X: 100
-      Y: -350
-      Z: 105
+      Z: 100
     }
     Rotation {
     }
@@ -211,7 +127,8 @@ Objects {
   }
   ParentId: 1135401942783005417
   ChildIds: 9004193827057754131
-  ChildIds: 825684371856182487
+  ChildIds: 11498022777835552758
+  ChildIds: 3110416614818279898
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -232,17 +149,24 @@ Objects {
       AnimationStance: "unarmed_idle_relaxed"
       AnimationStancePlaybackRate: 1
       AnimationStanceShouldLoop: true
-      AnimationPlaybackRateMultiplier: 1
+      AnimationPlaybackRateMultiplier: 1.5
       PlayOnStartAnimation {
         PlaybackRate: 1
+        ShouldLoop: true
       }
     }
   }
 }
 Objects {
-  Id: 825684371856182487
-  Name: "Forward Pacing"
+  Id: 3110416614818279898
+  Name: "Object Rotator"
   Transform {
+    Location {
+      X: -100
+      Z: -100
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
@@ -258,22 +182,18 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:MoveTo"
-      Vector {
-        Z: 100
+      Name: "cs:RotateTo"
+      Rotator {
+        Yaw: 180
       }
     }
     Overrides {
       Name: "cs:LocalSpace"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "cs:Reverse"
       Bool: false
-    }
-    Overrides {
-      Name: "cs:Duration"
-      Float: 1
     }
     Overrides {
       Name: "cs:AutoStart"
@@ -282,18 +202,20 @@ Objects {
     Overrides {
       Name: "cs:StartDelayRange"
       Vector2 {
-        Y: 1
       }
     }
     Overrides {
-      Name: "cs:RepeatCount"
-      Int: 0
+      Name: "cs:Duration"
+      Float: 0.5
     }
     Overrides {
       Name: "cs:IntervalDelayRange"
       Vector2 {
-        Y: 1
       }
+    }
+    Overrides {
+      Name: "cs:RepeatCount"
+      Int: -1
     }
     Overrides {
       Name: "cs:BounceOnRepeat"
@@ -301,15 +223,15 @@ Objects {
     }
     Overrides {
       Name: "cs:StartEventName"
-      String: "StartForwardPacing"
+      String: "StopWalk"
     }
     Overrides {
       Name: "cs:StopEventName"
-      String: "PC Nearby"
+      String: ""
     }
     Overrides {
       Name: "cs:ResetEventName"
-      String: "PC Leaves"
+      String: ""
     }
     Overrides {
       Name: "cs:OnStartedEventName"
@@ -325,7 +247,11 @@ Objects {
     }
     Overrides {
       Name: "cs:OnCompletedEventName"
-      String: "StartReversePacing"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:ReverseEveryOtherRepeat"
+      Bool: true
     }
     Overrides {
       Name: "cs:Duration:tooltip"
@@ -337,15 +263,11 @@ Objects {
     }
     Overrides {
       Name: "cs:LocalSpace:tooltip"
-      String: "Whether MoveTo is in local space"
+      String: "Whether RotateTo is in local space"
     }
     Overrides {
       Name: "cs:Reverse:tooltip"
-      String: "If true, the object will start from MoveTo position and move towards the initial position."
-    }
-    Overrides {
-      Name: "cs:MoveTo:tooltip"
-      String: "Target location for the object to move."
+      String: "If true, the object will start from RotateTo and rotate towards the initial rotation."
     }
     Overrides {
       Name: "cs:Object:tooltip"
@@ -357,7 +279,7 @@ Objects {
     }
     Overrides {
       Name: "cs:RepeatCount:tooltip"
-      String: "Number of times the object is moved. If set to -1, the action will keep repeating indefinitely."
+      String: "Number of times the object is rotated. If set to -1, the action will keep repeating indefinitely."
     }
     Overrides {
       Name: "cs:BounceOnRepeat:tooltip"
@@ -395,6 +317,10 @@ Objects {
       Name: "cs:IntervalDelayRange:tooltip"
       String: "Random delay time between each action repeat."
     }
+    Overrides {
+      Name: "cs:RotateTo:tooltip"
+      String: "Target rotation for the object to rotate to."
+    }
   }
   WantsNetworking: true
   Collidable_v2 {
@@ -409,16 +335,46 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 825684371856182487
-    SubobjectId: 3142504813567088034
-    InstanceId: 12433129555884572917
-    TemplateId: 1316674515572984490
+    SelfId: 3110416614818279898
+    SubobjectId: 8270530540092255344
+    InstanceId: 8611055842511075547
+    TemplateId: 9245310952892301186
     WasRoot: true
   }
 }
 Objects {
+  Id: 11498022777835552758
+  Name: "walk script"
+  Transform {
+    Location {
+      X: -100
+      Z: -100
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10228131311875963579
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 10774255524100540717
+    }
+  }
+}
+Objects {
   Id: 9004193827057754131
-  Name: "Reverse Pacing"
+  Name: "Pacing"
   Transform {
     Location {
       X: -100
@@ -426,6 +382,7 @@ Objects {
       Z: -105
     }
     Rotation {
+      Roll: 90
     }
     Scale {
       X: 1
@@ -444,6 +401,8 @@ Objects {
     Overrides {
       Name: "cs:MoveTo"
       Vector {
+        X: 400
+        Z: 100
       }
     }
     Overrides {
@@ -460,11 +419,12 @@ Objects {
     }
     Overrides {
       Name: "cs:AutoStart"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:StartDelayRange"
       Vector2 {
+        X: 1
         Y: 1
       }
     }
@@ -475,6 +435,7 @@ Objects {
     Overrides {
       Name: "cs:IntervalDelayRange"
       Vector2 {
+        X: 1
         Y: 1
       }
     }
@@ -484,11 +445,11 @@ Objects {
     }
     Overrides {
       Name: "cs:StartEventName"
-      String: "StartReversePacing"
+      String: ""
     }
     Overrides {
       Name: "cs:StopEventName"
-      String: "PC Nearby"
+      String: ""
     }
     Overrides {
       Name: "cs:ResetEventName"
@@ -496,11 +457,11 @@ Objects {
     }
     Overrides {
       Name: "cs:OnStartedEventName"
-      String: ""
+      String: "StartWalk"
     }
     Overrides {
       Name: "cs:OnStoppedEventName"
-      String: ""
+      String: "StopWalk"
     }
     Overrides {
       Name: "cs:OnResetEventName"
@@ -508,7 +469,11 @@ Objects {
     }
     Overrides {
       Name: "cs:OnCompletedEventName"
-      String: "StartForwardPacing"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:ReverseEveryOtherRepeat"
+      Bool: true
     }
     Overrides {
       Name: "cs:Duration:tooltip"

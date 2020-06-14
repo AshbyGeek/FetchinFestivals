@@ -27,12 +27,11 @@ Objects {
   }
 }
 Objects {
-  Id: 2690911339220467953
-  Name: "Wood 2x4 4m"
+  Id: 9801319856237299973
+  Name: "Wood"
   Transform {
     Location {
-      X: 1700
-      Y: 80
+      X: 1850
       Z: 50
     }
     Rotation {
@@ -44,6 +43,37 @@ Objects {
     }
   }
   ParentId: 9494313636328078300
+  ChildIds: 11759532629855247601
+  ChildIds: 11789150457179334996
+  ChildIds: 18210174563539376361
+  ChildIds: 2690911339220467953
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 2690911339220467953
+  Name: "Wood 2x4 4m"
+  Transform {
+    Location {
+      X: -150
+      Y: 80
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9801319856237299973
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceon"
   }
@@ -70,8 +100,7 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 2000
-      Z: 50
+      X: 150
     }
     Rotation {
       Yaw: -179.999954
@@ -82,7 +111,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9494313636328078300
+  ParentId: 9801319856237299973
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceon"
   }
@@ -109,8 +138,7 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 1700
-      Z: 50
+      X: -150
     }
     Rotation {
     }
@@ -120,7 +148,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9494313636328078300
+  ParentId: 9801319856237299973
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceon"
   }
@@ -147,9 +175,8 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 2000
+      X: 150
       Y: -80
-      Z: 50
     }
     Rotation {
       Yaw: -179.999954
@@ -160,7 +187,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9494313636328078300
+  ParentId: 9801319856237299973
   UnregisteredParameters {
   }
   Collidable_v2 {
