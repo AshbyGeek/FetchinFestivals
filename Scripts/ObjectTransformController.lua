@@ -29,6 +29,7 @@ local REPEAT_COUNT = script:GetCustomProperty("RepeatCount")
 local INTERVAL_DELAY_RANGE = script:GetCustomProperty("IntervalDelayRange")
 local BOUNCE_ON_REPEAT = script:GetCustomProperty("BounceOnRepeat")
 local LOCAL_SPACE = script:GetCustomProperty("LocalSpace")
+local REVERSE_EVERY_OTHER_REPEAT = script:GetCustomProperty("ReverseEveryOtherRepeat")
 
 -- User exposed action properties
 local MOVE_TO = script:GetCustomProperty("MoveTo")
@@ -51,10 +52,10 @@ end
 
 -- Variables
 local startValue = nil
+local toValue = nil
 local targetValue = nil
 local currentValue = Vector3.ZERO
 local currentCount = 0
-local isStarted = false
 local isCompleted = false
 
 function Tick(deltaTime)
@@ -65,43 +66,54 @@ function Tick(deltaTime)
     currentValue = GetObjectCurrentValue()
 
     if IsValueClose(targetValue, currentValue) then
-        if currentCount < REPEAT_COUNT then
-            currentCount = currentCount + 1
-            RepeatAction()
-        elseif currentCount == REPEAT_COUNT and not isCompleted then
+    	BroadcastEvent(ON_STOPPED_EVENT)
+    	currentCount = currentCount + 1
+
+    	if currentCount < REPEAT_COUNT or REPEAT_COUNT <= 0 then
+		    if REVERSE_EVERY_OTHER_REPEAT then
+		    	REVERSE = not REVERSE
+		    end
+			if AUTO_START then    		
+			    -- Interval delay wait
+			    Task.Wait(RandomFloat(INTERVAL_DELAY_RANGE.x, INTERVAL_DELAY_RANGE.y))
+			    
+			    StartActionInternal()
+    		end
+        elseif currentCount >= REPEAT_COUNT and not isCompleted then
             BroadcastEvent(ON_COMPLETED_EVENT)
             isCompleted = true
-        elseif REPEAT_COUNT < 0 then
-            RepeatAction()
         end
     end
 end
 
+
 -- nil StartAction()
 -- Starts moving the target object
 function StartAction()
-    if not Object.IsValid(OBJECT) then return end
+	Task.Wait(RandomFloat(DELAY_RANGE.x, DELAY_RANGE.y))
+	StartActionInternal()
+end
 
-    if not isStarted then
-        -- Delay wait
-        Task.Wait(RandomFloat(DELAY_RANGE.x, DELAY_RANGE.y))
-
-        currentCount = currentCount + 1
-        isStarted = true
-
-        BroadcastEvent(ON_STARTED_EVENT)
-    else
-        -- Interval delay wait
-        Task.Wait(RandomFloat(INTERVAL_DELAY_RANGE.x, INTERVAL_DELAY_RANGE.y))
-    end
-
+function StartActionInternal()
     -- Check if the object has been destroyed
     if not Object.IsValid(OBJECT) then
         warn("Target object is not valid or has been destroyed.")
         return
     end
-
+    
+    if isCompleted then
+    	currentCount = 0
+    	isCompleted = false
+    end
+    		
+	if REVERSE then
+		targetValue = startValue
+	else
+		targetValue = toValue
+	end
+	
     -- Start the action
+    BroadcastEvent(ON_STARTED_EVENT)
     if MOVE_TO then
         OBJECT:MoveTo(targetValue, DURATION, LOCAL_SPACE)
     elseif ROTATE_TO then
@@ -127,21 +139,6 @@ function StopAction()
     BroadcastEvent(ON_STOPPED_EVENT)
 end
 
--- Repeat the action either by returning or resetting from starting position
-function RepeatAction()
-    if BOUNCE_ON_REPEAT then
-        if targetValue == startValue then
-            targetValue = GetObjectValueTo()
-        else
-            targetValue = startValue
-        end
-        StartAction()
-    else
-        SetObjectCurrentValue(startValue)
-        StartAction()
-    end
-end
-
 -- nil ResetAction()
 -- Resets the target object to the original position
 function ResetAction()
@@ -152,15 +149,8 @@ function ResetAction()
     isCompleted = false
     currentCount = 0
 
-    -- Reset to initial values
-    if REVERSE then
-        SetObjectCurrentValue(GetObjectValueTo())
-        targetValue = startValue
-    else
-        SetObjectCurrentValue(startValue)
-        targetValue = GetObjectValueTo()
-    end
-
+	SetObjectCurrentValue(startValue)
+	
     -- Broadcast the reset event if the object resets to original position
     BroadcastEvent(ON_RESET_EVENT)
 end
@@ -222,9 +212,15 @@ end
 -- <bool> IsValueClose(value1, value2)
 -- Are these values basically identical
 function IsValueClose(value1, value2)
-    local difference = value1 - value2
-    -- To handle the rotation case, we must manually construct a vector
-    return Vector3.New(difference.x, difference.y, difference.z).size < 0.0001
+	if ROTATE_TO then
+		local q1 = Quaternion.New(value1)
+		local q2 = Quaternion.New(value2)
+		local dif = q1:GetForwardVector() - q2:GetForwardVector()
+		return dif.size < 0.0001
+	else
+		local difference = value1 - value2
+		return difference.size < 0.0001
+	end
 end
 
 -- Broadcast an event with checking if the event name is valid
@@ -242,11 +238,8 @@ end
 
 -- Initialize
 startValue = GetObjectCurrentValue()
-
+toValue = GetObjectValueTo()
 ResetAction()
-if AUTO_START then
-    StartAction()
-end
 
 -- Register events
 if START_EVENT and START_EVENT ~= "" then
@@ -259,4 +252,6 @@ if RESET_EVENT and RESET_EVENT ~= "" then
     Events.Connect(RESET_EVENT, ResetAction)
 end
 
-Events.Broadcast("StartForwardPacing")
+if AUTO_START then
+    StartAction()
+end
