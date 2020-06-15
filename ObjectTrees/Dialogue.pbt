@@ -196,7 +196,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:TextSpeed"
-      Float: 0.01
+      Float: 600
     }
     Overrides {
       Name: "cs:WaitBetweenLines"
@@ -215,7 +215,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   Control {
     RenderTransformPivot {
@@ -680,7 +680,7 @@ Objects {
     Width: 400
     Height: 50
     UIX: -50
-    UIY: -225
+    UIY: -245
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -1055,7 +1055,7 @@ Objects {
     Width: 400
     Height: 50
     UIX: 50
-    UIY: -225
+    UIY: -245
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -1336,7 +1336,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
     Width: 1500

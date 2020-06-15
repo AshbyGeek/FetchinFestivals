@@ -23,12 +23,9 @@ Objects {
   ChildIds: 12781611833892941547
   ChildIds: 17727289607405800977
   ChildIds: 130087607021240312
-  ChildIds: 8924461304662815761
-  ChildIds: 14112141440295821729
-  ChildIds: 15666721281899951301
+  ChildIds: 17714879494918924553
   ChildIds: 10321208027113496032
   ChildIds: 3034767076073914170
-  ChildIds: 14336884924745334471
   ChildIds: 778071788199611705
   ChildIds: 12185474439971038793
   ChildIds: 3493628679043568762
@@ -1197,6 +1194,10 @@ Objects {
         SelfId: 2557351713876682312
       }
     }
+    Overrides {
+      Name: "cs:ResourceName"
+      String: "tacos"
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2364,6 +2365,10 @@ Objects {
         SelfId: 10693087273504328499
       }
     }
+    Overrides {
+      Name: "cs:ResourceName"
+      String: "coins"
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2411,7 +2416,7 @@ Objects {
         }
         Overrides {
           Name: "cs:ResourceName"
-          String: "Coins"
+          String: "coins"
         }
         Overrides {
           Name: "cs:VictoryAmount"
@@ -2421,60 +2426,6 @@ Objects {
     }
     TemplateAsset {
       Id: 8776908897294597642
-    }
-  }
-}
-Objects {
-  Id: 14336884924745334471
-  Name: "Loot Bag"
-  Transform {
-    Location {
-      X: -100
-      Y: 250
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.99999994
-      Y: 0.99999994
-      Z: 0.99999994
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 419777977596350189
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Loot Bag"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -100
-            Y: 400
-          }
-        }
-        Overrides {
-          Name: "cs:ResourceMin"
-          Int: 10
-        }
-        Overrides {
-          Name: "cs:ResourceMax"
-          Int: 10
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 9635216125797134278
     }
   }
 }
@@ -2598,11 +2549,12 @@ Objects {
   }
 }
 Objects {
-  Id: 15666721281899951301
-  Name: "Monkey"
+  Id: 17714879494918924553
+  Name: "ClientContext"
   Transform {
     Location {
-      X: -1150
+      X: -550
+      Y: -250
     }
     Rotation {
     }
@@ -2613,8 +2565,37 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
+  ChildIds: 8924461304662815761
+  ChildIds: 14112141440295821729
+  ChildIds: 15666721281899951301
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 15666721281899951301
+  Name: "Monkey"
+  Transform {
+    Location {
+      X: -600
+      Y: 250
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17714879494918924553
   ChildIds: 3462734883564020552
-  ChildIds: 17271063117019348344
+  ChildIds: 1842583236905921005
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2637,31 +2618,6 @@ Objects {
   }
 }
 Objects {
-  Id: 17271063117019348344
-  Name: "ClientContext"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15666721281899951301
-  ChildIds: 1842583236905921005
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  NetworkContext {
-  }
-}
-Objects {
   Id: 1842583236905921005
   Name: "MonkeyDialogue"
   Transform {
@@ -2675,7 +2631,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17271063117019348344
+  ParentId: 15666721281899951301
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2711,7 +2667,6 @@ Objects {
       String: "Monkey"
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2735,8 +2690,8 @@ Objects {
   Name: "Taco"
   Transform {
     Location {
-      X: 250
-      Y: 400
+      X: 800
+      Y: 650
     }
     Rotation {
     }
@@ -2746,9 +2701,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4781671109827199097
+  ParentId: 17714879494918924553
   ChildIds: 6574062289219119204
-  ChildIds: 14201015317196115644
+  ChildIds: 15173331113514999834
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2771,31 +2726,6 @@ Objects {
   }
 }
 Objects {
-  Id: 14201015317196115644
-  Name: "ClientContext"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14112141440295821729
-  ChildIds: 15173331113514999834
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  NetworkContext {
-  }
-}
-Objects {
   Id: 15173331113514999834
   Name: "TacoScript"
   Transform {
@@ -2809,7 +2739,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14201015317196115644
+  ParentId: 14112141440295821729
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2845,7 +2775,6 @@ Objects {
       String: "Taco"
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2869,8 +2798,8 @@ Objects {
   Name: "Bird"
   Transform {
     Location {
-      X: -700
-      Y: -1100
+      X: -150
+      Y: -850
     }
     Rotation {
     }
@@ -2880,9 +2809,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4781671109827199097
+  ParentId: 17714879494918924553
   ChildIds: 15982224430961608586
-  ChildIds: 2155084145711253386
+  ChildIds: 3592429002850377245
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2905,31 +2834,6 @@ Objects {
   }
 }
 Objects {
-  Id: 2155084145711253386
-  Name: "ClientContext"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8924461304662815761
-  ChildIds: 3592429002850377245
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  NetworkContext {
-  }
-}
-Objects {
   Id: 3592429002850377245
   Name: "BirdDialogue"
   Transform {
@@ -2943,7 +2847,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2155084145711253386
+  ParentId: 8924461304662815761
   UnregisteredParameters {
     Overrides {
       Name: "cs:Icon"
@@ -2988,7 +2892,6 @@ Objects {
   ParentId: 8924461304662815761
   UnregisteredParameters {
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

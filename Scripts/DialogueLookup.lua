@@ -59,32 +59,10 @@ _G.Names = {
 }
 _G.Lookup = {}
 
-
------------------------- Comparison Functions ------------------------
-----------------------------------------------------------------------
-
-GreaterThan = function(lValue, rValue)
-	return lValue > rValue
-end
-
-LessThan = function(lValue, rValue)
-	return lValue < rValue
-end
-
-GreaterThanOrEqualTo = function(lValue, rValue)
-	return lValue >= rValue
-end
-
-LessThanOrEqualTo = function(lValue, rValue)
-	return lValue <= rValue
-end
-
-Equals = function(lValue, rValue)
-	return lValue == rValue
-end
-
-NotEquals = function(lValue, rValue)
-	return lValue ~= rValue
-end
-----------------------------------------------------------------------
-----------------------------------------------------------------------
+_G.Comparisons = {}
+_G.Comparisons[">"] = function(lValue, rValue) return lValue > rValue end
+_G.Comparisons["<"] = function(lValue, rValue) return lValue < rValue end
+_G.Comparisons[">="] = function(lValue, rValue) return lValue >= rValue end
+_G.Comparisons["<="] = function(lValue, rValue) return lValue <= rValue end
+_G.Comparisons["=="] = function(lValue, rValue) return lValue == rValue end
+_G.Comparisons["~="] = function(lValue, rValue) return lValue ~= rValue end

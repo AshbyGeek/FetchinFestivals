@@ -21,40 +21,20 @@ function SetFlagForPlayer(player, setFlag)
 	end
 end
 
-function OnInteracted(trigger)
-	print("Dialogue Interacted: " .. trigger)
-	--TODO: Make it an option to turn this back on at the end
-	--Turn off interaction with the trigger so we don't have to stare at the interaction prompt
-	trigger.isInteractable = false
-
-	--Grab the dialogue key then play the dialogue for all players	
-	local dialogueKey = trigger:GetCustomProperty("DialogueKey")
-	Events.BroadcastToAllPlayers("PlayDialogue", dialogueKey)
-
-	trigger.isInteractable = true
-	--TODO: Make this optional
-	--We only want to play the dialogue once, so unhook the event at the end
---	if interactionListeners[dialogueKey] ~= nil then
---		interactionListeners[dialogueKey]:Disconnect()
---	end
-end
-
-function InitDialog(characterName)
-	print("DialogAdded event received: " .. characterName)
-	local dialogTrigger = World.FindObjectByName(characterName):FindDescendantByType("Trigger")
-	interactionListeners[characterName] = dialogTrigger.interactedEvent:Connect(OnInteracted)
-	
-	-- TODO: connect dialogTrigger.On
-end
-
 function OnPlayDialog(characterName, player)
 	print("PlayDialog event received from player " .. player.name .. ": " .. characterName)
 	Events.BroadcastToAllPlayers("PlayDialogue", characterName, player)
 end
 
+function OnDialogueFinished(characterName, player)
+	print("DialogueFinished event received from player " .. player.name .. ": " .. characterName)
+	Events.BroadcastToAllPlayers("DialogueFinished", characterName, player)
+end
+
+
 function Init()
 	Events.Connect("PlayDialogue", OnPlayDialog)
---	Events.Connect("DialogAdded", InitDialog)
+	Events.Connect("DialogueFinished", OnDialogueFinished)
 	Events.Connect("SetFlag", SetFlagForPlayer)
 end
 
