@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15983847339678359101
+  Name: "Coral Table 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_coral_table_02"
+  }
+}
+Assets {
   Id: 15598075550265446675
   Name: "Icon Chicken"
   PlatformAssetType: 9
@@ -62,6 +71,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9882186229089397285
+  Name: "Coral Spikes Small"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_coral_spike_small_01"
+  }
+}
+Assets {
   Id: 9878632468415476141
   Name: "Cone - Truncated Wide"
   PlatformAssetType: 1
@@ -80,6 +98,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8119411702946201732
+  Name: "Coral Spikes Big"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_coral_spike_big_01"
+  }
+}
+Assets {
   Id: 7887238662729938253
   Name: "Sky Dome"
   PlatformAssetType: 6
@@ -89,12 +116,30 @@ Assets {
   }
 }
 Assets {
+  Id: 7091361572065527395
+  Name: "Coral Table 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_coral_table_01"
+  }
+}
+Assets {
   Id: 5876169963782699011
   Name: "Human Guy"
   PlatformAssetType: 17
   PrimaryAsset {
     AssetType: "AnimatedMeshAssetRef"
     AssetId: "npc_human_guy_basic_002_ref"
+  }
+}
+Assets {
+  Id: 3746147527806086990
+  Name: "Coral Branches Small"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_coral_branch_small_01"
   }
 }
 Assets {
@@ -149,5 +194,23 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameSolid8px__015"
+  }
+}
+Assets {
+  Id: 548886435997348264
+  Name: "Coral Tubes Big"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_coral_tube_big_01"
+  }
+}
+Assets {
+  Id: 37414144610039921
+  Name: "Coral Branches Big"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_coral_branch_big_01"
   }
 }
