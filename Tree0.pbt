@@ -29,6 +29,7 @@ Objects {
   ChildIds: 778071788199611705
   ChildIds: 12185474439971038793
   ChildIds: 3493628679043568762
+  ChildIds: 6676800976493982147
   ChildIds: 1155115717572715075
   UnregisteredParameters {
   }
@@ -43,7 +44,7 @@ Objects {
 }
 Objects {
   Id: 1155115717572715075
-  Name: "Terrain"
+  Name: "Sea Floor"
   Transform {
     Location {
       Z: -3500
@@ -413,6 +414,35 @@ Objects {
         Max: 102400
       }
     }
+  }
+}
+Objects {
+  Id: 6676800976493982147
+  Name: "Water"
+  Transform {
+    Location {
+      X: 5350
+      Y: -500
+      Z: -500
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Water"
   }
 }
 Objects {
@@ -3451,8 +3481,8 @@ Objects {
     Rotation {
     }
     Scale {
-      X: 50
-      Y: 50
+      X: 47.25
+      Y: 49
       Z: 1
     }
   }
