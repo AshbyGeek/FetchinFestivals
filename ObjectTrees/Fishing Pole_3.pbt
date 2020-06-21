@@ -1,7 +1,7 @@
-Name: "Fishing Pole_1"
-RootId: 5613920904552817939
+Name: "Fishing Pole_3"
+RootId: 2587355246784994221
 Objects {
-  Id: 15681490703103476566
+  Id: 16418969917301265884
   Name: "Fishing Pole and Reel"
   Transform {
     Location {
@@ -19,10 +19,10 @@ Objects {
       Z: 0.4
     }
   }
-  ParentId: 5613920904552817939
-  ChildIds: 2297890949630914223
-  ChildIds: 18027939878783711515
-  ChildIds: 10884528412824837669
+  ParentId: 2587355246784994221
+  ChildIds: 3954270730225386735
+  ChildIds: 13256057301346065536
+  ChildIds: 6676834028510414084
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -41,7 +41,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10884528412824837669
+  Id: 6676834028510414084
   Name: "handle"
   Transform {
     Location {
@@ -56,12 +56,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15681490703103476566
-  ChildIds: 1359629368717326003
-  ChildIds: 5660979383786073034
-  ChildIds: 7296006411285692872
-  ChildIds: 15937116054953358356
-  ChildIds: 14748613473729195521
+  ParentId: 16418969917301265884
+  ChildIds: 617692371400233622
+  ChildIds: 12058011495961549421
+  ChildIds: 197692196270625371
+  ChildIds: 1773532537916943595
+  ChildIds: 347328357443879663
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -79,7 +79,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14748613473729195521
+  Id: 347328357443879663
   Name: "Cylinder - Chamfered Small Polished"
   Transform {
     Location {
@@ -94,7 +94,7 @@ Objects {
       Z: 0.174995482
     }
   }
-  ParentId: 10884528412824837669
+  ParentId: 6676834028510414084
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -139,7 +139,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15937116054953358356
+  Id: 1773532537916943595
   Name: "Cylinder - Chamfered Small Polished"
   Transform {
     Location {
@@ -154,7 +154,7 @@ Objects {
       Z: 0.0345383361
     }
   }
-  ParentId: 10884528412824837669
+  ParentId: 6676834028510414084
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -191,7 +191,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7296006411285692872
+  Id: 197692196270625371
   Name: "Cylinder - Chamfered Small Polished"
   Transform {
     Location {
@@ -206,7 +206,7 @@ Objects {
       Z: 0.0345383361
     }
   }
-  ParentId: 10884528412824837669
+  ParentId: 6676834028510414084
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -255,7 +255,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5660979383786073034
+  Id: 12058011495961549421
   Name: "Cylinder - Chamfered Small Polished"
   Transform {
     Location {
@@ -270,7 +270,7 @@ Objects {
       Z: 0.0665181503
     }
   }
-  ParentId: 10884528412824837669
+  ParentId: 6676834028510414084
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -319,7 +319,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1359629368717326003
+  Id: 617692371400233622
   Name: "Capsule"
   Transform {
     Location {
@@ -334,7 +334,7 @@ Objects {
       Z: 0.464576274
     }
   }
-  ParentId: 10884528412824837669
+  ParentId: 6676834028510414084
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -383,7 +383,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18027939878783711515
+  Id: 13256057301346065536
   Name: "Rod"
   Transform {
     Location {
@@ -397,7 +397,7 @@ Objects {
       Z: 1.70063019
     }
   }
-  ParentId: 15681490703103476566
+  ParentId: 16418969917301265884
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -434,7 +434,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2297890949630914223
+  Id: 3954270730225386735
   Name: "Weapon Guide 1hand_melee"
   Transform {
     Location {
@@ -450,7 +450,7 @@ Objects {
       Z: 1.27803981
     }
   }
-  ParentId: 15681490703103476566
+  ParentId: 16418969917301265884
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
