@@ -1,136 +1,22 @@
 Name: "Fishing Pole"
 RootId: 13549635588043766945
 Objects {
-  Id: 1679098079636541344
-  Name: "Fishing Line"
-  Transform {
-    Location {
-      X: -550
-      Y: -150
-      Z: 150
-    }
-    Rotation {
-      Pitch: 12
-    }
-    Scale {
-      X: 0.01
-      Y: 0.01
-      Z: 1.5
-    }
-  }
-  ParentId: 13549635588043766945
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 7844352894034477570
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 0.966887474
-        B: 0.5
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.150087535
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 6.91555929
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 4854270377050611262
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 9813133790749554128
-  Name: "Cylinder - Rounded"
-  Transform {
-    Location {
-      X: -600
-      Y: -150
-      Z: 200
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.03
-      Y: 0.03
-      Z: 2
-    }
-  }
-  ParentId: 13549635588043766945
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 6462149572123614436
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14973081213453646867
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 5401359858258589638
   Name: "Fishing Pole and Reel"
   Transform {
     Location {
-      X: -550
-      Y: -350
-      Z: 100
+      X: -67.6240845
+      Y: 62.4253082
+      Z: 93.6741791
     }
     Rotation {
+      Pitch: -20.3345947
+      Yaw: 89.9999847
     }
     Scale {
-      X: 0.782448292
-      Y: 0.782448292
-      Z: 0.782448292
+      X: 0.4
+      Y: 0.4
+      Z: 0.4
     }
   }
   ParentId: 13549635588043766945
