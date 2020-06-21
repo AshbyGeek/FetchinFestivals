@@ -1,13 +1,9 @@
 Name: "Raft Experiments"
 RootId: 16025853996090276812
 Objects {
-  Id: 9494313636328078300
-  Name: "Wood Tied Together"
+  Id: 15872760807241623033
+  Name: "Raft"
   Transform {
-    Location {
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -21,8 +17,18 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Wood Tied Together"
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 14233809360273642161
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Raft"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8954974949469803
+    }
   }
 }
