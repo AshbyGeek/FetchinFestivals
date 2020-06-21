@@ -35,12 +35,7 @@ Objects {
   ChildIds: 13549635588043766945
   ChildIds: 399548437852404293
   ChildIds: 1135401942783005417
-  ChildIds: 5695791373347504104
-  ChildIds: 3919497671947416785
   ChildIds: 2587355246784994221
-  ChildIds: 7464863124004008986
-  ChildIds: 6731068836155521445
-  ChildIds: 12992328850386448242
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -50,236 +45,6 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
-  }
-}
-Objects {
-  Id: 12992328850386448242
-  Name: "Loot Bag"
-  Transform {
-    Location {
-      X: 5458.67773
-      Y: -1711.03345
-      Z: 1355.37646
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.99999994
-      Y: 0.99999994
-      Z: 0.99999994
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 419777977596350189
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Loot Bag"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 5458.67773
-            Y: -1719.42981
-            Z: 1232.46228
-          }
-        }
-        Overrides {
-          Name: "cs:ResourceMin"
-          Int: 10
-        }
-        Overrides {
-          Name: "cs:ResourceMax"
-          Int: 10
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 925571488236501906
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            Z: 98.9256897
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 8.69690418
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 9635216125797134278
-    }
-  }
-}
-Objects {
-  Id: 6731068836155521445
-  Name: "Loot Bag"
-  Transform {
-    Location {
-      X: 5557.03906
-      Y: -1718.17627
-      Z: 1295.92212
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.99999994
-      Y: 0.99999994
-      Z: 0.99999994
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 419777977596350189
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Loot Bag"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 5507.64404
-            Y: -1718.79517
-            Z: 1235.07544
-          }
-        }
-        Overrides {
-          Name: "cs:ResourceMin"
-          Int: 10
-        }
-        Overrides {
-          Name: "cs:ResourceMax"
-          Int: 10
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 925571488236501906
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            Z: 98.9256897
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 8.69690418
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 14011053830191137704
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            Z: 49.955368
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 9635216125797134278
-    }
-  }
-}
-Objects {
-  Id: 7464863124004008986
-  Name: "Loot Bag"
-  Transform {
-    Location {
-      X: 5589.13281
-      Y: -1239.53418
-      Z: 35.8500824
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.99999994
-      Y: 0.99999994
-      Z: 0.99999994
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 419777977596350189
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Loot Bag"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 5557.03906
-            Y: -1719.43884
-            Z: 1234.66687
-          }
-        }
-        Overrides {
-          Name: "cs:ResourceMin"
-          Int: 10
-        }
-        Overrides {
-          Name: "cs:ResourceMax"
-          Int: 10
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 925571488236501906
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            Z: 98.9256897
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 8.69690418
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 9635216125797134278
-    }
   }
 }
 Objects {
@@ -310,64 +75,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Fishing Pole"
-  }
-}
-Objects {
-  Id: 3919497671947416785
-  Name: "Raft Experiments"
-  Transform {
-    Location {
-      X: 2033.69336
-      Y: -1287.45679
-      Z: -555.533447
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Raft Experiments"
-  }
-}
-Objects {
-  Id: 5695791373347504104
-  Name: "Raft Experiments"
-  Transform {
-    Location {
-      X: 2033.69336
-      Y: -1287.45679
-      Z: -555.533447
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Raft Experiments_1"
   }
 }
 Objects {
@@ -453,9 +160,9 @@ Objects {
   Name: "Grimmel Village Base"
   Transform {
     Location {
-      X: 650
-      Y: -450
-      Z: -50
+      X: 5217.10107
+      Y: -58.6958618
+      Z: -377.741089
     }
     Rotation {
     }
@@ -467,6 +174,11 @@ Objects {
   }
   ParentId: 4781671109827199097
   ChildIds: 16389739794955704627
+  ChildIds: 5695791373347504104
+  ChildIds: 3919497671947416785
+  ChildIds: 7464863124004008986
+  ChildIds: 6731068836155521445
+  ChildIds: 12992328850386448242
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -478,13 +190,340 @@ Objects {
   }
 }
 Objects {
+  Id: 12992328850386448242
+  Name: "Loot Bag"
+  Transform {
+    Location {
+      X: 5458.67773
+      Y: -1711.03345
+      Z: 1355.37646
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.99999994
+      Y: 0.99999994
+      Z: 0.99999994
+    }
+  }
+  ParentId: 7445509659111263872
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 419777977596350189
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Loot Bag"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 241.57666
+            Y: -1660.73389
+            Z: 1610.20337
+          }
+        }
+        Overrides {
+          Name: "cs:ResourceMin"
+          Int: 10
+        }
+        Overrides {
+          Name: "cs:ResourceMax"
+          Int: 10
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.99999994
+            Y: 0.99999994
+            Z: 0.99999994
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 925571488236501906
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            Z: 98.9256897
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 8.69690418
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9635216125797134278
+    }
+  }
+}
+Objects {
+  Id: 6731068836155521445
+  Name: "Loot Bag"
+  Transform {
+    Location {
+      X: 5557.03906
+      Y: -1718.17627
+      Z: 1295.92212
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.99999994
+      Y: 0.99999994
+      Z: 0.99999994
+    }
+  }
+  ParentId: 7445509659111263872
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 419777977596350189
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Loot Bag"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 290.542969
+            Y: -1660.09937
+            Z: 1612.81653
+          }
+        }
+        Overrides {
+          Name: "cs:ResourceMin"
+          Int: 10
+        }
+        Overrides {
+          Name: "cs:ResourceMax"
+          Int: 10
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.99999994
+            Y: 0.99999994
+            Z: 0.99999994
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 925571488236501906
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            Z: 98.9256897
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 8.69690418
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14011053830191137704
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            Z: 49.955368
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9635216125797134278
+    }
+  }
+}
+Objects {
+  Id: 7464863124004008986
+  Name: "Loot Bag"
+  Transform {
+    Location {
+      X: 5589.13281
+      Y: -1239.53418
+      Z: 35.8500824
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.99999994
+      Y: 0.99999994
+      Z: 0.99999994
+    }
+  }
+  ParentId: 7445509659111263872
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 419777977596350189
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Loot Bag"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 339.938
+            Y: -1660.74292
+            Z: 1612.40796
+          }
+        }
+        Overrides {
+          Name: "cs:ResourceMin"
+          Int: 10
+        }
+        Overrides {
+          Name: "cs:ResourceMax"
+          Int: 10
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.99999994
+            Y: 0.99999994
+            Z: 0.99999994
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 925571488236501906
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            Z: 98.9256897
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 8.69690418
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9635216125797134278
+    }
+  }
+}
+Objects {
+  Id: 3919497671947416785
+  Name: "Raft Experiments"
+  Transform {
+    Location {
+      X: -3183.40771
+      Y: -1228.76099
+      Z: -177.792358
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7445509659111263872
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Raft Experiments"
+  }
+}
+Objects {
+  Id: 5695791373347504104
+  Name: "Raft Experiments"
+  Transform {
+    Location {
+      X: -3183.40771
+      Y: -1228.76099
+      Z: -177.792358
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7445509659111263872
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Raft Experiments_1"
+  }
+}
+Objects {
   Id: 16389739794955704627
   Name: "Lean-to Storage"
   Transform {
     Location {
-      X: 4889.1206
-      Y: 1242.1228
-      Z: -427.116516
+      X: 249.758789
+      Y: 524.000854
+      Z: -99.3754272
     }
     Rotation {
     }
@@ -514,9 +553,9 @@ Objects {
   Name: "Stuff Inside Lean-To"
   Transform {
     Location {
-      X: -30.6029053
+      X: -30.6030273
       Y: -32.6067505
-      Z: 50
+      Z: 24.7095947
     }
     Rotation {
     }
@@ -761,7 +800,7 @@ Objects {
     Location {
       X: 50
       Y: -354.220154
-      Z: 84.2281
+      Z: 68.6551819
     }
     Rotation {
     }
@@ -1363,7 +1402,7 @@ Objects {
     Location {
       X: 50
       Y: 50
-      Z: 50
+      Z: 35.4058533
     }
     Rotation {
     }
@@ -1859,7 +1898,7 @@ Objects {
     Location {
       X: 50
       Y: -76.7681885
-      Z: 212.970306
+      Z: 197.3974
     }
     Rotation {
     }
@@ -2751,9 +2790,7 @@ Objects {
   Name: "Water"
   Transform {
     Location {
-      X: 5350
-      Y: -500
-      Z: -500
+      Z: -463.239594
     }
     Rotation {
     }
@@ -6185,9 +6222,9 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      X: 5449.42578
-      Y: -1728.67175
-      Z: 1323.90845
+      X: 5220.32
+      Y: -263.173492
+      Z: -328.584564
     }
     Rotation {
     }

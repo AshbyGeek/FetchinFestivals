@@ -1,20 +1,17 @@
 Name: "Water"
 RootId: 6676800976493982147
 Objects {
-  Id: 3296814929294577869
+  Id: 2431140709479651506
   Name: "Water"
   Transform {
     Location {
-      X: -1654.4751
-      Y: 1775.45874
-      Z: 750.272278
     }
     Rotation {
     }
     Scale {
-      X: 1497.99988
-      Y: 942.000122
-      Z: 100.749985
+      X: 1051.4967
+      Y: 720.42157
+      Z: 1
     }
   }
   ParentId: 6676800976493982147
@@ -34,13 +31,13 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12095835209017042614
+      Id: 11892106081940656160
     }
     Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
-    EnableCameraCollision: true
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
     StaticMesh {
       Physics {
       }
@@ -56,12 +53,34 @@ Objects {
     Rotation {
     }
     Scale {
-      X: 1497.99988
-      Y: 942.000122
+      X: 1051.49695
+      Y: 720.422
       Z: 100.749985
     }
   }
   ParentId: 6676800976493982147
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Water"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Caustics"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Control Fog"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Create Water Physics Volume"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Depth Desaturation"
+      Float: 0.750728369
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
