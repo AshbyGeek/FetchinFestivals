@@ -46,32 +46,6 @@ Objects {
   }
 }
 Objects {
-  Id: 16025853996090276812
-  Name: "Raft Experiments"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1135401942783005417
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Raft Experiments"
-  }
-}
-Objects {
   Id: 1566469419690024478
   Name: "Light bulb & switch"
   Transform {

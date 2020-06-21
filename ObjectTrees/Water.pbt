@@ -5,7 +5,9 @@ Objects {
   Name: "Water"
   Transform {
     Location {
-      Z: -5000
+      X: -1654.4751
+      Y: 1775.45874
+      Z: 750.272278
     }
     Rotation {
     }

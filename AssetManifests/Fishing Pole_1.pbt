@@ -1,4 +1,13 @@
 Assets {
+  Id: 14973081213453646867
+  Name: "Cylinder - Rounded"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_rounded_002"
+  }
+}
+Assets {
   Id: 14212988502358508072
   Name: "Metal Basic Steel"
   PlatformAssetType: 2
@@ -41,6 +50,24 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_carbon-fiber_001"
+  }
+}
+Assets {
+  Id: 6462149572123614436
+  Name: "Bark Redwood 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_bark_redwood_001_uv"
+  }
+}
+Assets {
+  Id: 4854270377050611262
+  Name: "Pipe"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_001"
   }
 }
 Assets {

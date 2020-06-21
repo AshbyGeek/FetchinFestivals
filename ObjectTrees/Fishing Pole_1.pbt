@@ -1,13 +1,129 @@
-Name: "Fishing Pole"
-RootId: 2587355246784994221
+Name: "Fishing Pole_1"
+RootId: 13549635588043766945
 Objects {
-  Id: 16418969917301265884
+  Id: 1679098079636541344
+  Name: "Fishing Line"
+  Transform {
+    Location {
+      X: -550
+      Y: -150
+      Z: 150
+    }
+    Rotation {
+      Pitch: 12
+    }
+    Scale {
+      X: 0.01
+      Y: 0.01
+      Z: 1.5
+    }
+  }
+  ParentId: 13549635588043766945
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7844352894034477570
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 0.966887474
+        B: 0.5
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.150087535
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 6.91555929
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4854270377050611262
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9813133790749554128
+  Name: "Cylinder - Rounded"
+  Transform {
+    Location {
+      X: -600
+      Y: -150
+      Z: 200
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.03
+      Y: 0.03
+      Z: 2
+    }
+  }
+  ParentId: 13549635588043766945
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 6462149572123614436
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14973081213453646867
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5401359858258589638
   Name: "Fishing Pole and Reel"
   Transform {
     Location {
-      X: -496.722443
+      X: -550
       Y: -350
-      Z: 119.008591
+      Z: 100
     }
     Rotation {
     }
@@ -17,10 +133,10 @@ Objects {
       Z: 0.782448292
     }
   }
-  ParentId: 2587355246784994221
-  ChildIds: 3954270730225386735
-  ChildIds: 13256057301346065536
-  ChildIds: 6676834028510414084
+  ParentId: 13549635588043766945
+  ChildIds: 7838368150344153221
+  ChildIds: 5341768390434882220
+  ChildIds: 9158862576633231437
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -39,7 +155,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6676834028510414084
+  Id: 9158862576633231437
   Name: "handle"
   Transform {
     Location {
@@ -54,12 +170,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16418969917301265884
-  ChildIds: 617692371400233622
-  ChildIds: 12058011495961549421
-  ChildIds: 197692196270625371
-  ChildIds: 1773532537916943595
-  ChildIds: 347328357443879663
+  ParentId: 5401359858258589638
+  ChildIds: 13764994393471193144
+  ChildIds: 15705238108145417711
+  ChildIds: 15359727077854571497
+  ChildIds: 12293315078841688688
+  ChildIds: 4736270406112800287
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -77,7 +193,7 @@ Objects {
   }
 }
 Objects {
-  Id: 347328357443879663
+  Id: 4736270406112800287
   Name: "Cylinder - Chamfered Small Polished"
   Transform {
     Location {
@@ -92,7 +208,7 @@ Objects {
       Z: 0.174995482
     }
   }
-  ParentId: 6676834028510414084
+  ParentId: 9158862576633231437
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -137,7 +253,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1773532537916943595
+  Id: 12293315078841688688
   Name: "Cylinder - Chamfered Small Polished"
   Transform {
     Location {
@@ -152,7 +268,7 @@ Objects {
       Z: 0.0345383361
     }
   }
-  ParentId: 6676834028510414084
+  ParentId: 9158862576633231437
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -189,7 +305,7 @@ Objects {
   }
 }
 Objects {
-  Id: 197692196270625371
+  Id: 15359727077854571497
   Name: "Cylinder - Chamfered Small Polished"
   Transform {
     Location {
@@ -204,7 +320,7 @@ Objects {
       Z: 0.0345383361
     }
   }
-  ParentId: 6676834028510414084
+  ParentId: 9158862576633231437
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -253,7 +369,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12058011495961549421
+  Id: 15705238108145417711
   Name: "Cylinder - Chamfered Small Polished"
   Transform {
     Location {
@@ -268,7 +384,7 @@ Objects {
       Z: 0.0665181503
     }
   }
-  ParentId: 6676834028510414084
+  ParentId: 9158862576633231437
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -317,7 +433,7 @@ Objects {
   }
 }
 Objects {
-  Id: 617692371400233622
+  Id: 13764994393471193144
   Name: "Capsule"
   Transform {
     Location {
@@ -332,7 +448,7 @@ Objects {
       Z: 0.464576274
     }
   }
-  ParentId: 6676834028510414084
+  ParentId: 9158862576633231437
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -381,7 +497,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13256057301346065536
+  Id: 5341768390434882220
   Name: "Rod"
   Transform {
     Location {
@@ -395,7 +511,7 @@ Objects {
       Z: 1.70063019
     }
   }
-  ParentId: 16418969917301265884
+  ParentId: 5401359858258589638
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -432,7 +548,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3954270730225386735
+  Id: 7838368150344153221
   Name: "Weapon Guide 1hand_melee"
   Transform {
     Location {
@@ -448,7 +564,7 @@ Objects {
       Z: 1.27803981
     }
   }
-  ParentId: 16418969917301265884
+  ParentId: 5401359858258589638
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
