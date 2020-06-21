@@ -1,5 +1,446 @@
-Name: "Raft Experiments"
+Name: "BigRaft"
 RootId: 3919497671947416785
+Objects {
+  Id: 11239243555639787439
+  Name: "Raft"
+  Transform {
+    Location {
+      X: 3366.76074
+      Y: -390.563354
+      Z: -527.587
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3919497671947416785
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3846604984479901200
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 3830888102854223075
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail1:color"
+          Color {
+            R: 0.36470589
+            G: 0.149019614
+            B: 0.0980392247
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9217504216430338460
+      value {
+        Overrides {
+          Name: "ma:Shared_Detail1:color"
+          Color {
+            R: 0.36470589
+            G: 0.149019614
+            B: 0.0980392247
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 3830888102854223075
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 11494023524585412644
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1850
+            Z: 50
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14233809360273642161
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Raft"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1333.06738
+            Y: 1064.25867
+            Z: 27.9464722
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8954974949469803
+    }
+  }
+}
+Objects {
+  Id: 7311298992654403977
+  Name: "Raft"
+  Transform {
+    Location {
+      X: 3665.57031
+      Y: -390.563354
+      Z: -527.587
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3919497671947416785
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3846604984479901200
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 3830888102854223075
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail1:color"
+          Color {
+            R: 0.36470589
+            G: 0.149019614
+            B: 0.0980392247
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9217504216430338460
+      value {
+        Overrides {
+          Name: "ma:Shared_Detail1:color"
+          Color {
+            R: 0.36470589
+            G: 0.149019614
+            B: 0.0980392247
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 3830888102854223075
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 11494023524585412644
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1850
+            Z: 50
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14233809360273642161
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Raft"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1333.06738
+            Y: 896.893433
+            Z: 27.9464722
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8954974949469803
+    }
+  }
+}
+Objects {
+  Id: 17820683103081756229
+  Name: "Raft"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3919497671947416785
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3846604984479901200
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 3830888102854223075
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail1:color"
+          Color {
+            R: 0.36470589
+            G: 0.149019614
+            B: 0.0980392247
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9217504216430338460
+      value {
+        Overrides {
+          Name: "ma:Shared_Detail1:color"
+          Color {
+            R: 0.36470589
+            G: 0.149019614
+            B: 0.0980392247
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 3830888102854223075
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 11494023524585412644
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1850
+            Z: 50
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14233809360273642161
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Raft"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1631.87695
+            Y: 896.893433
+            Z: 27.9464722
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8954974949469803
+    }
+  }
+}
+Objects {
+  Id: 14496098089614946143
+  Name: "Raft"
+  Transform {
+    Location {
+      X: 3665.57031
+      Y: -390.563354
+      Z: -527.587
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3919497671947416785
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3846604984479901200
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 3830888102854223075
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail1:color"
+          Color {
+            R: 0.36470589
+            G: 0.149019614
+            B: 0.0980392247
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9217504216430338460
+      value {
+        Overrides {
+          Name: "ma:Shared_Detail1:color"
+          Color {
+            R: 0.36470589
+            G: 0.149019614
+            B: 0.0980392247
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 3830888102854223075
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 11494023524585412644
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1850
+            Z: 50
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14233809360273642161
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Raft"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1631.87695
+            Y: 1063.65161
+            Z: 27.9464722
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8954974949469803
+    }
+  }
+}
 Objects {
   Id: 6568491594684630420
   Name: "Raft"
@@ -449,230 +890,6 @@ Objects {
   }
 }
 Objects {
-  Id: 5137015565209330701
-  Name: "Raft"
-  Transform {
-    Location {
-      X: 2795.45483
-      Y: 92.0992432
-      Z: -527.587
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3919497671947416785
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3846604984479901200
-      value {
-        Overrides {
-          Name: "ma:Shared_BaseMaterial:id"
-          AssetReference {
-            Id: 3830888102854223075
-          }
-        }
-        Overrides {
-          Name: "ma:Shared_Detail1:color"
-          Color {
-            R: 0.36470589
-            G: 0.149019614
-            B: 0.0980392247
-            A: 1
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 9217504216430338460
-      value {
-        Overrides {
-          Name: "ma:Shared_Detail1:color"
-          Color {
-            R: 0.36470589
-            G: 0.149019614
-            B: 0.0980392247
-            A: 1
-          }
-        }
-        Overrides {
-          Name: "ma:Shared_BaseMaterial:id"
-          AssetReference {
-            Id: 3830888102854223075
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 11494023524585412644
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 1850
-            Z: 50
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 14233809360273642161
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Raft"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 408.251221
-            Y: 1827.97876
-            Z: 27.9464722
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 8954974949469803
-    }
-  }
-}
-Objects {
-  Id: 8562807798625248102
-  Name: "Raft"
-  Transform {
-    Location {
-      X: 3031.35644
-      Y: -134.609741
-      Z: -527.587
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3919497671947416785
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3846604984479901200
-      value {
-        Overrides {
-          Name: "ma:Shared_BaseMaterial:id"
-          AssetReference {
-            Id: 3830888102854223075
-          }
-        }
-        Overrides {
-          Name: "ma:Shared_Detail1:color"
-          Color {
-            R: 0.36470589
-            G: 0.149019614
-            B: 0.0980392247
-            A: 1
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 9217504216430338460
-      value {
-        Overrides {
-          Name: "ma:Shared_Detail1:color"
-          Color {
-            R: 0.36470589
-            G: 0.149019614
-            B: 0.0980392247
-            A: 1
-          }
-        }
-        Overrides {
-          Name: "ma:Shared_BaseMaterial:id"
-          AssetReference {
-            Id: 3830888102854223075
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 11494023524585412644
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 1850
-            Z: 50
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 14233809360273642161
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Raft"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 788.194336
-            Y: 1321.64844
-            Z: 27.9464722
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 8954974949469803
-    }
-  }
-}
-Objects {
   Id: 12225451510452236394
   Name: "Raft"
   Transform {
@@ -873,118 +1090,6 @@ Objects {
           Vector {
             X: 1333.06738
             Y: 1409.68652
-            Z: 27.9464722
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 8954974949469803
-    }
-  }
-}
-Objects {
-  Id: 4206931326871960128
-  Name: "Raft"
-  Transform {
-    Location {
-      X: 3366.76074
-      Y: -390.563354
-      Z: -527.587
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3919497671947416785
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3846604984479901200
-      value {
-        Overrides {
-          Name: "ma:Shared_BaseMaterial:id"
-          AssetReference {
-            Id: 3830888102854223075
-          }
-        }
-        Overrides {
-          Name: "ma:Shared_Detail1:color"
-          Color {
-            R: 0.36470589
-            G: 0.149019614
-            B: 0.0980392247
-            A: 1
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 9217504216430338460
-      value {
-        Overrides {
-          Name: "ma:Shared_Detail1:color"
-          Color {
-            R: 0.36470589
-            G: 0.149019614
-            B: 0.0980392247
-            A: 1
-          }
-        }
-        Overrides {
-          Name: "ma:Shared_BaseMaterial:id"
-          AssetReference {
-            Id: 3830888102854223075
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 11494023524585412644
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 1850
-            Z: 50
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 14233809360273642161
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Raft"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 997.663086
-            Y: 1152.84705
             Z: 27.9464722
           }
         }

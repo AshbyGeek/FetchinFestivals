@@ -1,18 +1,18 @@
 Assets {
-  Id: 12095835209017042614
-  Name: "Cube"
+  Id: 11351511964936111330
+  Name: "Wood 2x4 4m"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_002"
+    AssetId: "sm_two-by-four_3m"
   }
 }
 Assets {
-  Id: 3489509329730504515
-  Name: "Wood Planks"
+  Id: 3830888102854223075
+  Name: "Wood Planks Dark"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "mi_wood_planks_001_uv"
+    AssetId: "mi_wood_planks_dark_001_uv"
   }
 }
