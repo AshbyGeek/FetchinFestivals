@@ -52,6 +52,7 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
+            Yaw: 94.0262604
           }
         }
         Overrides {
@@ -138,6 +139,7 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
+            Yaw: 87.5677261
           }
         }
         Overrides {
@@ -235,6 +237,7 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
+            Yaw: 85.5606232
           }
         }
         Overrides {
@@ -260,6 +263,23 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: 8.69690418
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14011053830191137704
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            Z: 49.9553795
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -88.2904663
           }
         }
       }
@@ -304,7 +324,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 3555.43945
+            X: 3529.17041
             Y: 47.9226074
             Z: 591.383545
           }
@@ -320,6 +340,7 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
+            Yaw: 131.09906
           }
         }
         Overrides {
@@ -381,7 +402,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Fishing Pole_1"
+    FilePartitionName: "Fishing Pole_3"
   }
 }
 Objects {
