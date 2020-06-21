@@ -1,75 +1,16 @@
-Name: "Hut Experiment 3"
+Name: "Huts"
 RootId: 4059367283274785029
 Objects {
-  Id: 2998319806386392517
-  Name: "Hut Walls"
-  Transform {
-    Location {
-      X: 344.68454
-      Y: -321.79892
-      Z: 6.10351563e-05
-    }
-    Rotation {
-      Yaw: -179.999954
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4059367283274785029
-  ChildIds: 4110411012277116378
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 4110411012277116378
-  Name: "Hut Walls"
-  Transform {
-    Location {
-      X: 82.9507294
-      Y: -333.168274
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2998319806386392517
-  ChildIds: 13394301117306241869
-  ChildIds: 11830267085229292233
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
   Id: 11830267085229292233
-  Name: "Complete Hut"
+  Name: "Little Hut"
   Transform {
     Location {
-      X: -1302.39734
-      Y: -77.6885529
-      Z: 20.821167
+      X: 1564.13049
+      Y: 89.0586243
+      Z: 20.821228
     }
     Rotation {
-      Yaw: -179.999969
+      Yaw: 8.19622583e-05
     }
     Scale {
       X: 0.75
@@ -77,7 +18,7 @@ Objects {
       Z: 0.75
     }
   }
-  ParentId: 4110411012277116378
+  ParentId: 4059367283274785029
   ChildIds: 10782483832587580004
   ChildIds: 5955393411403378780
   ChildIds: 18193997242541130863
@@ -855,13 +796,15 @@ Objects {
 }
 Objects {
   Id: 13394301117306241869
-  Name: "Complete Hut"
+  Name: "Big Hut"
   Transform {
     Location {
-      X: -30.8327332
-      Y: -6.10276842
+      X: 292.566345
+      Y: 17.4719543
+      Z: 6.10351563e-05
     }
     Rotation {
+      Yaw: -179.999954
     }
     Scale {
       X: 1
@@ -869,7 +812,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4110411012277116378
+  ParentId: 4059367283274785029
   ChildIds: 12560336760686331571
   ChildIds: 14554331023581940768
   ChildIds: 11027771476949183174
