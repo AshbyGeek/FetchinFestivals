@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12109912409539366833
+  Name: "Icon Club"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Club"
+  }
+}
+Assets {
   Id: 10943517677273640336
   Name: "Park Bench"
   PlatformAssetType: 1

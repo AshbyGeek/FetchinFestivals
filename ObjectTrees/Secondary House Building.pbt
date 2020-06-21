@@ -1,13 +1,40 @@
 Name: "Secondary House Building"
 RootId: 4515065123383789539
 Objects {
-  Id: 8684688952966263888
-  Name: "Human Guy"
+  Id: 2097441432186252534
+  Name: "NPC"
   Transform {
     Location {
       X: 2234.99463
       Y: 89.3867188
       Z: 146.130463
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4515065123383789539
+  ChildIds: 618988394348815900
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 618988394348815900
+  Name: "Human Guy"
+  Transform {
+    Location {
+      X: 0.00048828125
+      Y: -0.000610351562
     }
     Rotation {
       Yaw: -162.33667
@@ -18,7 +45,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4515065123383789539
+  ParentId: 2097441432186252534
+  ChildIds: 13039682659800672530
+  ChildIds: 9425976619264412487
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -42,6 +71,80 @@ Objects {
       PlayOnStartAnimation {
         PlaybackRate: 1
       }
+    }
+  }
+}
+Objects {
+  Id: 9425976619264412487
+  Name: "Trigger"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 1.87830155e-05
+    }
+    Scale {
+      X: 0.880826473
+      Y: 0.999999046
+      Z: 1
+    }
+  }
+  ParentId: 618988394348815900
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    Interactable: true
+    InteractionLabel: "speak"
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:sphere"
+    }
+  }
+}
+Objects {
+  Id: 13039682659800672530
+  Name: "GrimmelPersonDialogue"
+  Transform {
+    Location {
+      Z: -3.05175781e-05
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 618988394348815900
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 12109912409539366833
+      }
+    }
+    Overrides {
+      Name: "cs:CharacterName"
+      String: "Villager"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 10932499191666008857
     }
   }
 }

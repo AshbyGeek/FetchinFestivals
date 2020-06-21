@@ -6,11 +6,11 @@ local tree = {
 	{
 		optionA = {
 			text = "Okay",
-			{speaker = 0, "Off you go!"}
+			{speaker = 0, text = "Off you go!"}
 		},
 		optionB = {
-			text = "No"
-			{speaker = 0, "Suit yourself!"}
+			text = "No",
+			{speaker = 0, text = "Suit yourself!"}
 		}
 	},
 }

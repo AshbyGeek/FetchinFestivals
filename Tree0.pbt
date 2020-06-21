@@ -868,6 +868,18 @@ Objects {
     }
   }
   ParentId: 15666721281899951301
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 1837409129931025237
+      }
+    }
+    Overrides {
+      Name: "cs:CharacterName"
+      String: "Monkey Joe"
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -977,6 +989,18 @@ Objects {
     }
   }
   ParentId: 14112141440295821729
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 9687141869897714628
+      }
+    }
+    Overrides {
+      Name: "cs:CharacterName"
+      String: "Taco Truck"
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1260,8 +1284,9 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      Y: -400
-      Z: 221.237854
+      X: 5156.01318
+      Y: 934.658264
+      Z: -383.77
     }
     Rotation {
     }

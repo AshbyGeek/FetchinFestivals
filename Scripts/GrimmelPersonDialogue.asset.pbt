@@ -1,5 +1,5 @@
-Id: 863274793379134591
-Name: "DialogueManagerClient"
+Id: 10932499191666008857
+Name: "GrimmelPersonDialogue"
 PlatformAssetType: 3
 TextAsset {
 }
