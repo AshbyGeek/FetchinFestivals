@@ -381,7 +381,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Fishing Pole"
+    FilePartitionName: "Fishing Pole_1"
   }
 }
 Objects {

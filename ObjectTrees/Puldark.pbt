@@ -122340,7 +122340,7 @@ Objects {
     Location {
       X: 1640.89282
       Y: -987.709229
-      Z: 195.438477
+      Z: 195.438476
     }
     Rotation {
       Pitch: 90
@@ -122379,7 +122379,7 @@ Objects {
   Name: "Simple Crate 150cm"
   Transform {
     Location {
-      X: 1651.00977
+      X: 1651.00976
       Y: -943.157898
       Z: 75.4497
     }
