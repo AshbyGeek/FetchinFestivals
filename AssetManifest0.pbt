@@ -53,6 +53,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9687141869897714628
+  Name: "Icon Leaf"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Leaf"
+  }
+}
+Assets {
   Id: 8119411702946201732
   Name: "Coral Spikes Big"
   PlatformAssetType: 1
@@ -77,6 +86,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_coral_branch_small_01"
+  }
+}
+Assets {
+  Id: 1837409129931025237
+  Name: "Icon Profile"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Profile"
   }
 }
 Assets {

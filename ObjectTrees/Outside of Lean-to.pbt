@@ -10,7 +10,7 @@ Objects {
       Z: 128.619507
     }
     Rotation {
-      Yaw: 125.293503
+      Yaw: 125.293488
     }
     Scale {
       X: 1
@@ -19,24 +19,6 @@ Objects {
     }
   }
   ParentId: 3944233438676570141
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_Detail1:color"
-      Color {
-        G: 0.119602494
-        B: 0.419999957
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Detail2:color"
-      Color {
-        R: 0.0309934523
-        B: 0.179999948
-        A: 1
-      }
-    }
-  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

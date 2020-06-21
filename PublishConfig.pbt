@@ -1,0 +1,15 @@
+GameId: "2121164f89674d03be83c37541d9ce72"
+ClientVersion: "1.0.138-prod-s"
+Name: "The Mammoth Minnow"
+Description: "Two villages, floating on the waters, separated by a lagoon. A feuding group of fishers, connected by family, severed by the watery void and their own stubborn natures.\r\n\r\nWhat is the feud? The Greatest Fisher! A title given to the fisher able\r\nto bag the Mammoth Minnow. An incredible fish, given to hiding in a secret\r\nspot deep between the two villages.\r\n\r\nYou must develop relationships with the more friendly, younger villagers and figure out a way to bring the two villages together as an outsider.\r\nUltimately you must catch the Mammoth Minnow and show the villagers, especially the elders, that their ancient feud is over!\r\n\r\nCreated during the Core x IGDA June 2020 Game Jam."
+MaxPlayers: 8
+IsOpenForEdit: true
+Tags: "Adventure"
+Tags: "Casual"
+Tags: "ThirdPerson"
+Tags: "Relaxing"
+Tags: "OpenWorld"
+ScreenshotPaths: "Z:\\Downloads\\Is_fVj.png"
+ScreenshotPaths: "Z:\\Downloads\\KtXmk3.png"
+ScreenshotPaths: "Z:\\Downloads\\The Mammoth Minnow by ashbygeek, biologygeek42, ashbyenator, BethKorth_files\\4xT2qk.png"
+ScreenshotPaths: "Z:\\Downloads\\The Mammoth Minnow by ashbygeek, biologygeek42, ashbyenator, BethKorth_files\\5C6dQr.png"

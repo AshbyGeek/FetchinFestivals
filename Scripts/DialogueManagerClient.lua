@@ -38,57 +38,6 @@ local chosenOption = nil
 
 local currentSpeakers = {}
 
-function PlayDialogue(lookupKey)
-
-	UI.PrintToScreen("Playing dialogue: " .. lookupKey)
-
-	local lines = _G.Lookup[lookupKey]
-	
-	currentSpeakers[0] = {
-		name = _G.Names[lookupKey],
-		image = _G.PortraitImages[lookupKey]
-	}
-	currentSpeakers[1] = {
-		name = _G.Names["player"],
-		image = _G.PortraitImages[lookupKey]
-	}
-
-	--First, check if we actually have any dialogue to show
-	if lines ~= nil and #lines > 0 then
-		UI_PARENT.visibility = Visibility.INHERIT
-	else
-		--If there's no dialogue to show, just nope out
-		return
-	end
-
-	TraversePath(lines)
-	
-	--Once all the dialogue is done, hide the UI
-	UI_PARENT.visibility = Visibility.FORCE_OFF
-end
-
-function DoFlagCheck(flagCheck)
-
-	local passed = true
-
-	--If the proper flag check values were not provided, automatically pass the check
-	if flagCheck ~= nil then 
-		local lvalueKey = flagCheck[1]
-		local comparison = flagCheck[2]
-		local rvalue = flagCheck[3]
-
-		if lvalueKey ~= nil and comparison ~= nil then
-			--Grab the lValue from the local player
-			local lValue = Game.GetLocalPlayer():GetResource(flagCheck[1])
-
-			--Perform the comparison
-			passed = flagCheck[2](lValue, flagCheck[3])
-		end
-	end
-
-	return passed
-end
-
 function DialogueChoice(optionA, optionB, optionC)
 
 	--If no options were provided, don't bother with the choice at all
@@ -97,9 +46,9 @@ function DialogueChoice(optionA, optionB, optionC)
 	end
 
 	--Determine if we want to display each option
-	local passedCheckA = optionA ~= nil and DoFlagCheck(optionA.flagCheck)
-	local passedCheckB = optionB ~= nil and DoFlagCheck(optionB.flagCheck)
-	local passedCheckC = optionC ~= nil and DoFlagCheck(optionC.flagCheck)
+	local passedCheckA = optionA ~= nil and AllConditionsPass(optionA)
+	local passedCheckB = optionB ~= nil and AllConditionsPass(optionB)
+	local passedCheckC = optionC ~= nil and AllConditionsPass(optionC)
 
 	--If no options passed, return early since no choice can be made
 	if not (passedCheckA or passedCheckB or passedCheckC) then
@@ -150,13 +99,110 @@ function DialogueChoice(optionA, optionB, optionC)
 	UI.SetCanCursorInteractWithUI(false)
 
 	--Now we want to traverse the path provided by the chosen option, before returning to our original dialogue path
-	TraversePath(chosenOption.path)
+	TraversePath(GetNumericTableEntries(chosenOption))
 end
 
-function TraversePath(path)
+function GetNumericTableEntries(table)
+	local newTable = {}
+	for k,v in sortedIntegerPairs(table) do
+		if type(k) == "number" then
+			newTable[#newTable+1] = v
+		end
+	end
+	return newTable
+end
 
-	local lines = path
+function sortedIntegerPairs(t)
+    -- collect the keys
+    local keys = {}
+    for k in pairs(t) do 
+    	if type(k) == "number" then
+	    	keys[#keys+1] = k
+    	end
+    end
 
+	table.sort(keys)
+
+    -- return the iterator function
+    local i = 0
+    return function()
+        i = i + 1
+        if keys[i] then
+            return keys[i], t[keys[i]]
+        end
+    end
+end
+
+function ConditionExistsInternal(condition)
+	local lvalueKey = nil
+	local comparison = _G.Comparisons["=="]
+	local rvalue = 1
+	if (type(condition) == "string") then
+		lvalueKey = condition
+	elseif (type(condition) == "table") then
+		lvalueKey = condition[1]
+		comparison = _G.Comparisons[condition[2]]
+		if (condition[3] ~= nil) then
+			rvalue = condition[3]
+		end
+	end
+	
+	if type(lvalueKey) == "string" and type(comparison) == "function" then
+		--Grab the lValue from the local player
+		local lValue = Game.GetLocalPlayer():GetResource(lvalueKey)
+
+		--Perform the comparison
+		return comparison(lValue, rvalue)
+	end
+end
+
+function AllConditionsPass(item)
+	return ConditionExists(item.condition) and ConditionDoesntExist(item.conditionIsNot)
+end
+
+function ConditionExists(condition)
+	local exists = ConditionExistsInternal(condition)
+	if exists == nil then 
+		return true
+	else 
+		return exists
+	end
+end
+
+function ConditionDoesntExist(condition)
+	local exists = ConditionExistsInternal(condition)
+	if exists == nil then 
+		return true
+	else 
+		return not exists
+	end
+end
+
+function ConvertAddResourceToSetFlag(addResource)
+	if (type(addResource) == "string") then
+		return {flag = addResource, value = 1, addValue = true}
+	elseif type(addResource) == "table" and type(addResource[1]) == "string" then
+		setFlag = {}
+		setFlag.flag = addResource[1]
+		setFlag.addValue = true
+		
+		if type(addResource[2]) == "number" then
+			setFlag.value = addResource[2]
+		else
+			setFlag.value = 1
+		end
+		
+		return setFlag
+	end
+
+	return nil
+end
+
+function SetFlag(flag)
+	Events.BroadcastToServer("SetFlag", Game.GetLocalPlayer(), flag)
+end
+
+function TraversePath(lines)
 	--First, check if we actually have any dialogue to show
 	if lines == nil or #lines < 1 then
 		return
@@ -165,33 +211,41 @@ function TraversePath(path)
 	--Loop through each line of dialogue
 	for i = 1, #lines do
 		
+		local line = lines[i]
+		
 		--Determine if the player failed any dialogue checks
-		local failedCheck = not DoFlagCheck(lines[i].flagCheck)
-		local setFlag = lines[i].setFlag
+		local showLine = AllConditionsPass(line)
 
 		--If the player didn't fail the check for this line, and we need to set a flag
-		if not failedCheck and setFlag ~= nil then
-			Events.BroadcastToServer("SetFlag", Game.GetLocalPlayer(), setFlag)
+		if showLine and line.addResource ~= nil then
+			local flag = ConvertAddResourceToSetFlag(line.addResource)
+			SetFlag(flag)
+		end
+		if showLine and line.addResources ~= nil then
+			local flag = ConvertAddResourceToSetFlag(line.addResources)
+			SetFlag(flag)
+		end
+		if showLine and line.setFlag ~= nil then
+			SetFlag(line.setFlag)
 		end
 
-		--If the speaker is set as -1, then that means we are at a dialogue option
-		if not failedCheck and lines[i].speaker == -1 then
-			--Do the branching choice
-			DialogueChoice(lines[i].optionA, lines[i].optionB, lines[i].optionC)
-		elseif not failedCheck then
+		-- are we presenting a choice?
+		if showLine and (line.optionA ~= nil or line.optionB ~= nil or line.optionC ~= nil)  then
+			DialogueChoice(line.optionA, line.optionB, line.optionC)
+		elseif showLine and line.text ~= nil then
 			--Make sure a speaker value was actually provided
-			if lines[i].speaker ~= nil then
+			if line.speaker ~= nil then
 				--Update the visuals for the UI
-				if (lines[i].name ~= nil) then
-					currentSpeakers[lines[i].speaker] = lines[i].name
+				if (line.name ~= nil) then
+					currentSpeakers[line.speaker] = line.name
 				end
-				if (lines[i].image ~= nil) then
-					currentSpeakers[lines[i].speaker] = lines[i].image
+				if (line.image ~= nil) then
+					currentSpeakers[line.speaker] = line.image
 				end
-				SetSpeaker(lines[i].speaker)
+				SetSpeaker(line.speaker)
 				
 				--Determine which portrait to display
-				if lines[i].speaker == 0 then
+				if line.speaker == 0 then
 					leftSpeaker.parent.visibility = Visibility.INHERIT
 					rightSpeaker.parent.visibility = Visibility.FORCE_OFF
 				else
@@ -201,10 +255,10 @@ function TraversePath(path)
 			end
 		
 			--Grab the number of characters for this set of dialogue
-			local length = string.len(lines[i].text)
+			local length = string.len(line.text)
 		
 			local outputString = ""
-			local currentLine = lines[i].text
+			local currentLine = line.text
 	
 			--Start by clearing the current text
 			SAY_DIALOGUE.text = outputString
@@ -223,7 +277,7 @@ function TraversePath(path)
 				SAY_DIALOGUE.text = outputString
 
 				--This wait is to give us the typing effect
-				Task.Wait(speed)
+				Task.Wait(1/speed)
 			end
 
 			--If we want to wait for a click
@@ -273,6 +327,34 @@ function SetSpeaker(speaker)
 end 
 
 
+function PlayDialogue(lookupKey, player)
+	UI.PrintToScreen("Playing dialogue: " .. lookupKey)
+
+	local lines = _G.Lookup[lookupKey]
+	
+	currentSpeakers[0] = {
+		name = _G.Names[lookupKey],
+		image = _G.PortraitImages[lookupKey]
+	}
+	currentSpeakers[1] = {
+		name = _G.Names["player"],
+		image = _G.PortraitImages["player"]
+	}
+
+	--First, check if we actually have any dialogue to show
+	if lines ~= nil and #lines > 0 then
+		UI_PARENT.visibility = Visibility.INHERIT
+	else
+		--If there's no dialogue to show, just nope out
+		return
+	end
+
+	TraversePath(lines)
+	
+	--Once all the dialogue is done, hide the UI
+	UI_PARENT.visibility = Visibility.FORCE_OFF
+	Events.BroadcastToServer("DialogueFinished", lookupKey, player)
+end
 
 
 function OnBindingPressed(player, binding)

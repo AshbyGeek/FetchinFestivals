@@ -7,6 +7,10 @@ function api.Init(script, tree)
 	local characterRoot = script.parent
 	local characterId = characterRoot.name
 	
+	if not _G.PortraitImages then _G.PortraitImages = {} end
+	if not _G.Names then _G.Names = {} end
+	if not _G.Lookup then _G.Lookup = {} end
+	
 	_G.PortraitImages[characterId] = script:GetCustomProperty("Icon")
 	_G.Names[characterId] = script:GetCustomProperty("CharacterName")
 	_G.Lookup[characterId] = tree
