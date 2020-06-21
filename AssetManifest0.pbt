@@ -1,4 +1,13 @@
 Assets {
+  Id: 17332161428390367110
+  Name: "Simple Crate 150cm"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_crate_simple_150cm_001"
+  }
+}
+Assets {
   Id: 16910278292812118833
   Name: "Sun Light"
   PlatformAssetType: 6
@@ -17,12 +26,30 @@ Assets {
   }
 }
 Assets {
+  Id: 15983847339678359101
+  Name: "Coral Table 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_coral_table_02"
+  }
+}
+Assets {
   Id: 15598075550265446675
   Name: "Icon Chicken"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Icon_Chicken"
+  }
+}
+Assets {
+  Id: 14294983449702713257
+  Name: "Wooden Barrel"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_barrel_001"
   }
 }
 Assets {
@@ -62,6 +89,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9882186229089397285
+  Name: "Coral Spikes Small"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_coral_spike_small_01"
+  }
+}
+Assets {
   Id: 9878632468415476141
   Name: "Cone - Truncated Wide"
   PlatformAssetType: 1
@@ -80,12 +116,30 @@ Assets {
   }
 }
 Assets {
+  Id: 8119411702946201732
+  Name: "Coral Spikes Big"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_coral_spike_big_01"
+  }
+}
+Assets {
   Id: 7887238662729938253
   Name: "Sky Dome"
   PlatformAssetType: 6
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "CORESKY_Sky"
+  }
+}
+Assets {
+  Id: 7091361572065527395
+  Name: "Coral Table 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_coral_table_01"
   }
 }
 Assets {
@@ -98,12 +152,30 @@ Assets {
   }
 }
 Assets {
+  Id: 3746147527806086990
+  Name: "Coral Branches Small"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_coral_branch_small_01"
+  }
+}
+Assets {
   Id: 3699051791178510613
   Name: "Icon Manticore"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Icon_Manticore"
+  }
+}
+Assets {
+  Id: 3433416882178080463
+  Name: "Street Sign - Rectangle"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_street-sign_rectangle_001"
   }
 }
 Assets {
@@ -149,5 +221,23 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameSolid8px__015"
+  }
+}
+Assets {
+  Id: 548886435997348264
+  Name: "Coral Tubes Big"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_coral_tube_big_01"
+  }
+}
+Assets {
+  Id: 37414144610039921
+  Name: "Coral Branches Big"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_coral_branch_big_01"
   }
 }
