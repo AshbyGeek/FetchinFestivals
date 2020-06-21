@@ -19,6 +19,25 @@ Objects {
     }
   }
   ParentId: 4515065123383789539
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail2:color"
+      Color {
+        R: 0.0199999809
+        G: 0.0174834281
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
