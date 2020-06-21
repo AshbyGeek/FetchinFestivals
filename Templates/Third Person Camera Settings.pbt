@@ -1,5 +1,5 @@
 Assets {
-  Id: 14544498541084356191
+  Id: 17532040546611937760
   Name: "Third Person Camera Settings"
   PlatformAssetType: 5
   TemplateAsset {
