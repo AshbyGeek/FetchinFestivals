@@ -60688,7 +60688,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719727
+      X: 149.719726
       Y: -399.656189
     }
     Rotation {
@@ -61949,7 +61949,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719727
+      X: 149.719726
       Y: -240.012222
     }
     Rotation {
@@ -63210,7 +63210,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719727
+      X: 149.719726
       Y: -80.9106598
     }
     Rotation {
@@ -64471,7 +64471,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719727
+      X: 149.719726
       Y: -557.512451
     }
     Rotation {
@@ -65732,7 +65732,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719727
+      X: 149.719726
       Y: -716.613892
     }
     Rotation {
@@ -66993,7 +66993,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719727
+      X: 149.719726
       Y: -876.257935
     }
     Rotation {
@@ -90952,7 +90952,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719727
+      X: 149.719726
       Y: 557.331543
     }
     Rotation {
@@ -92213,7 +92213,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719727
+      X: 149.719726
       Y: 716.975525
     }
     Rotation {
@@ -93474,7 +93474,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719727
+      X: 149.719726
       Y: 876.077087
     }
     Rotation {
@@ -94735,7 +94735,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719727
+      X: 149.719726
       Y: 399.475342
     }
     Rotation {
@@ -95996,7 +95996,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719727
+      X: 149.719726
       Y: 240.373825
     }
     Rotation {
@@ -97257,7 +97257,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719727
+      X: 149.719726
       Y: 80.7298737
     }
     Rotation {
