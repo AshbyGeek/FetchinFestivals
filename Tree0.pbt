@@ -18,18 +18,8 @@ Objects {
   ChildIds: 16813558807825262224
   ChildIds: 9097045909698899905
   ChildIds: 16021957439032328522
-  ChildIds: 14982843161775482339
-  ChildIds: 399548437852404293
-  ChildIds: 8770080683918938696
-  ChildIds: 12781611833892941547
-  ChildIds: 17727289607405800977
   ChildIds: 130087607021240312
   ChildIds: 17714879494918924553
-  ChildIds: 10321208027113496032
-  ChildIds: 3034767076073914170
-  ChildIds: 778071788199611705
-  ChildIds: 12185474439971038793
-  ChildIds: 3493628679043568762
   ChildIds: 6676800976493982147
   ChildIds: 1155115717572715075
   ChildIds: 7445509659111263872
@@ -50,9 +40,9 @@ Objects {
   Name: "Grimmel Village Base"
   Transform {
     Location {
-      X: 650
-      Y: -450
-      Z: -50
+      X: 5217.10107
+      Y: -58.6958618
+      Z: -377.741089
     }
     Rotation {
     }
@@ -64,6 +54,9 @@ Objects {
   }
   ParentId: 4781671109827199097
   ChildIds: 16389739794955704627
+  ChildIds: 5695791373347504104
+  ChildIds: 3919497671947416785
+  ChildIds: 16000297928271821424
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -74,11 +67,107 @@ Objects {
     IsGroup: true
   }
 }
+
+
+
+Objects {
+  Id: 16000297928271821424
+  Name: "Stepping Stones"
+  Transform {
+    Location {
+      X: 3064.52417
+      Y: -144.357956
+      Z: -527.587
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7445509659111263872
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Stepping Stones"
+  }
+}
+Objects {
+  Id: 3919497671947416785
+  Name: "BigRaft"
+  Transform {
+    Location {
+      X: -3183.40771
+      Y: -1228.76099
+      Z: -177.792358
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7445509659111263872
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "BigRaft"
+  }
+}
+Objects {
+  Id: 5695791373347504104
+  Name: "ParcourCourse"
+  Transform {
+    Location {
+      X: -3183.40771
+      Y: -1228.76099
+      Z: -177.792358
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7445509659111263872
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "ParcourCourse"
+  }
+}
+
+
+
 Objects {
   Id: 16389739794955704627
   Name: "Lean-to Storage"
   Transform {
     Location {
+      X: 249.758789
+      Y: 524.000854
+      Z: -99.3754272
     }
     Rotation {
     }
@@ -108,9 +197,9 @@ Objects {
   Name: "Stuff Inside Lean-To"
   Transform {
     Location {
-      X: -30.6029053
+      X: -30.6030273
       Y: -32.6067505
-      Z: 50
+      Z: 24.7095947
     }
     Rotation {
     }
@@ -355,7 +444,7 @@ Objects {
     Location {
       X: 50
       Y: -354.220154
-      Z: 84.2281
+      Z: 68.6551819
     }
     Rotation {
     }
@@ -957,7 +1046,7 @@ Objects {
     Location {
       X: 50
       Y: 50
-      Z: 50
+      Z: 35.4058533
     }
     Rotation {
     }
@@ -1453,7 +1542,7 @@ Objects {
     Location {
       X: 50
       Y: -76.7681885
-      Z: 212.970306
+      Z: 197.3974
     }
     Rotation {
     }
@@ -2345,9 +2434,7 @@ Objects {
   Name: "Water"
   Transform {
     Location {
-      X: 5350
-      Y: -500
-      Z: -500
+      Z: -463.239594
     }
     Rotation {
     }
@@ -4879,7 +4966,7 @@ Objects {
 }
 Objects {
   Id: 17714879494918924553
-  Name: "ClientContext"
+  Name: "NPCs(Client)"
   Transform {
     Location {
       X: -550
@@ -5264,212 +5351,6 @@ Objects {
   }
 }
 Objects {
-  Id: 17727289607405800977
-  Name: "Human Guy"
-  Transform {
-    Location {
-      X: -350
-      Y: 250
-      Z: 105
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 5876169963782699011
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    AnimatedMesh {
-      AnimationStance: "unarmed_idle_relaxed"
-      AnimationStancePlaybackRate: 1
-      AnimationStanceShouldLoop: true
-      AnimationPlaybackRateMultiplier: 1
-      PlayOnStartAnimation {
-        PlaybackRate: 1
-      }
-    }
-  }
-}
-Objects {
-  Id: 12781611833892941547
-  Name: "Human Gal"
-  Transform {
-    Location {
-      X: -300
-      Y: 100
-      Z: 105
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 1476882005651003338
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    AnimatedMesh {
-      AnimationStance: "unarmed_idle_relaxed"
-      AnimationStancePlaybackRate: 1
-      AnimationStanceShouldLoop: true
-      AnimationPlaybackRateMultiplier: 1
-      PlayOnStartAnimation {
-        PlaybackRate: 1
-      }
-    }
-  }
-}
-Objects {
-  Id: 8770080683918938696
-  Name: "Human Gal"
-  Transform {
-    Location {
-      X: -550
-      Y: -100
-      Z: 105
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13359770314692939332
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    AnimatedMesh {
-      AnimationStance: "unarmed_idle_relaxed"
-      AnimationStancePlaybackRate: 1
-      AnimationStanceShouldLoop: true
-      AnimationPlaybackRateMultiplier: 1
-      PlayOnStartAnimation {
-        PlaybackRate: 1
-      }
-    }
-  }
-}
-Objects {
-  Id: 399548437852404293
-  Name: "Music/Sound Effects Experiments"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Music_Sound Effects Experiments"
-  }
-}
-Objects {
-  Id: 14982843161775482339
-  Name: "Default Floor"
-  Transform {
-    Location {
-      X: 300
-      Y: -60
-      Z: -50
-    }
-    Rotation {
-    }
-    Scale {
-      X: 50
-      Y: 50
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 15445660053533024282
-      }
-    }
-  }
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 16021957439032328522
   Name: "Sky Whimsical Sunny Saturation"
   Transform {
@@ -5520,38 +5401,7 @@ Objects {
     }
   }
 }
-Objects {
-  Id: 9097045909698899905
-  Name: "Third Person Camera Settings"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 6230487291917958532
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Third Person Camera Settings"
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14544498541084356191
-    }
-  }
-}
+
 Objects {
   Id: 16813558807825262224
   Name: "Spawn Point"
@@ -5612,11 +5462,38 @@ Objects {
     }
   }
 }
-
-
-
-
-
+Objects {
+  Id: 9097045909698899905
+  Name: "Third Person Camera Settings"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6230487291917958532
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Third Person Camera Settings"
+        }
+      }
+    }
+    TemplateAsset { 
+      Id: 14544498541084356191
+    }
+  }
+}
 
 Objects {
   Id: 10181509606713714935
