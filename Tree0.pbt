@@ -29,6 +29,9 @@ Objects {
   ChildIds: 778071788199611705
   ChildIds: 12185474439971038793
   ChildIds: 3493628679043568762
+  ChildIds: 13549635588043766945
+  ChildIds: 399548437852404293
+  ChildIds: 1135401942783005417
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -38,6 +41,84 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 1135401942783005417
+  Name: "Character Model Experiment"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Character Model Experiment"
+  }
+}
+Objects {
+  Id: 399548437852404293
+  Name: "Music/Sound Effects Experiments"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Music_Sound Effects Experiments"
+  }
+}
+Objects {
+  Id: 13549635588043766945
+  Name: "Fishing Pole"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Fishing Pole"
   }
 }
 Objects {
@@ -3476,10 +3557,6 @@ Objects {
   Id: 16940102053547858507
   Name: "Game Settings"
   Transform {
-    Location {
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
