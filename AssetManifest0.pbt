@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13363351533628697321
+  Name: "Crowbar"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_modern_crowbar_001"
+  }
+}
+Assets {
   Id: 12095835209017042614
   Name: "Cube"
   PlatformAssetType: 1
@@ -35,12 +44,21 @@ Assets {
   }
 }
 Assets {
-  Id: 8596037260994989294
-  Name: "Wooden Bucket"
+  Id: 8435138641053284605
+  Name: "Small Open Crate"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bucket_001"
+    AssetId: "sm_crate_narrow_open_simple_160cm_001"
+  }
+}
+Assets {
+  Id: 8291263329560567274
+  Name: "Craftsman Dining Chair"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_chair_dining_001"
   }
 }
 Assets {
@@ -50,6 +68,24 @@ Assets {
   PrimaryAsset {
     AssetType: "AnimatedMeshAssetRef"
     AssetId: "npc_human_guy_basic_001_ref"
+  }
+}
+Assets {
+  Id: 5517518297363436280
+  Name: "Teardrop - Truncated"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_truncated_teardrop_001"
+  }
+}
+Assets {
+  Id: 3828370507767554417
+  Name: "Food Fruit 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_food_generic_apple_001_uv"
   }
 }
 Assets {

@@ -1,53 +1,6 @@
 Name: "Hut Experiment 3"
 RootId: 4059367283274785029
 Objects {
-  Id: 3574473272493625980
-  Name: "Door, Rounded Top"
-  Transform {
-    Location {
-      X: 689.85144
-      Y: 99.4114075
-      Z: 75.4499817
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.75
-      Y: 0.75
-      Z: 0.75
-    }
-  }
-  ParentId: 4059367283274785029
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 12792287558144180312
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15301289992325954442
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 2998319806386392517
   Name: "Hut Walls"
   Transform {
@@ -94,6 +47,829 @@ Objects {
     }
   }
   ParentId: 2998319806386392517
+  ChildIds: 13394301117306241869
+  ChildIds: 11830267085229292233
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 11830267085229292233
+  Name: "Complete Hut"
+  Transform {
+    Location {
+      X: -1302.39734
+      Y: -77.6885529
+      Z: 20.821167
+    }
+    Rotation {
+      Yaw: -179.999969
+    }
+    Scale {
+      X: 0.75
+      Y: 0.75
+      Z: 0.75
+    }
+  }
+  ParentId: 4110411012277116378
+  ChildIds: 10782483832587580004
+  ChildIds: 5955393411403378780
+  ChildIds: 18193997242541130863
+  ChildIds: 4878901140048470372
+  ChildIds: 537466238163856081
+  ChildIds: 8894614092301830019
+  ChildIds: 11249115726892172383
+  ChildIds: 10289899253470880678
+  ChildIds: 18083549346690879332
+  ChildIds: 6763835072407253966
+  ChildIds: 8658621855054542178
+  ChildIds: 1418261514389722532
+  ChildIds: 9208166040888936267
+  ChildIds: 13539863859641683128
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 13539863859641683128
+  Name: "Gem - Radiant Polished"
+  Transform {
+    Location {
+      X: 27.2920971
+      Y: 8.705513
+      Z: 446.378
+    }
+    Rotation {
+      Yaw: 179.999954
+    }
+    Scale {
+      X: 9.4
+      Y: 6.9
+      Z: 5
+    }
+  }
+  ParentId: 11830267085229292233
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2194244818725384012
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11256418275184246555
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9208166040888936267
+  Name: "Door, Rounded Top"
+  Transform {
+    Location {
+      X: -397.28479
+      Y: -81.9390793
+      Z: 75.4499207
+    }
+    Rotation {
+      Yaw: 179.999954
+    }
+    Scale {
+      X: 0.75
+      Y: 0.75
+      Z: 0.75
+    }
+  }
+  ParentId: 11830267085229292233
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 12792287558144180312
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15301289992325954442
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 1418261514389722532
+  Name: "Whitebox Wall 01"
+  Transform {
+    Location {
+      X: -279.483246
+      Y: -288.385406
+      Z: 73.3967896
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.75
+      Y: 1
+      Z: 0.6
+    }
+  }
+  ParentId: 11830267085229292233
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_WallInner:id"
+      AssetReference {
+        Id: 15007266117947014902
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallInner2:id"
+      AssetReference {
+        Id: 15007266117947014902
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13045266873582499720
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 8658621855054542178
+  Name: "Fantasy Castle Stairs Spiral Wall 01 - Small"
+  Transform {
+    Location {
+      X: 322.080811
+      Y: -185.673325
+    }
+    Rotation {
+      Yaw: 89.9999161
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 1.44
+    }
+  }
+  ParentId: 11830267085229292233
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail3:id"
+      AssetReference {
+        Id: 15007266117947014902
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail3:utile"
+      Float: 0.5
+    }
+    Overrides {
+      Name: "ma:Shared_Detail3:vtile"
+      Float: 1.8
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7576540203508348522
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6763835072407253966
+  Name: "Whitebox Wall 01"
+  Transform {
+    Location {
+      X: 423.509064
+      Y: 214.714111
+      Z: 73.3967896
+    }
+    Rotation {
+      Yaw: -90.0000076
+    }
+    Scale {
+      X: 0.5
+      Y: 1
+      Z: 0.6
+    }
+  }
+  ParentId: 11830267085229292233
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_WallInner:id"
+      AssetReference {
+        Id: 15007266117947014902
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallInner2:id"
+      AssetReference {
+        Id: 15007266117947014902
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13045266873582499720
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 18083549346690879332
+  Name: "Fantasy Castle Stairs Spiral Wall 01 - Small"
+  Transform {
+    Location {
+      X: 320.85791
+      Y: -187.132309
+    }
+    Rotation {
+      Yaw: 89.9949417
+    }
+    Scale {
+      X: 0.2
+      Y: 0.2
+      Z: 1.44
+    }
+  }
+  ParentId: 11830267085229292233
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail3:id"
+      AssetReference {
+        Id: 15007266117947014902
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail3:utile"
+      Float: 0.25
+    }
+    Overrides {
+      Name: "ma:Shared_Detail3:vtile"
+      Float: 1.8
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7576540203508348522
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10289899253470880678
+  Name: "Fantasy Castle Stairs Spiral Wall 01 - Small"
+  Transform {
+    Location {
+      X: -260.387695
+      Y: -186.98053
+    }
+    Rotation {
+      Yaw: -3.05175563e-05
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 1.44
+    }
+  }
+  ParentId: 11830267085229292233
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail3:id"
+      AssetReference {
+        Id: 15007266117947014902
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail3:utile"
+      Float: 0.5
+    }
+    Overrides {
+      Name: "ma:Shared_Detail3:vtile"
+      Float: 1.8
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7576540203508348522
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 11249115726892172383
+  Name: "Fantasy Castle Stairs Spiral Wall 01 - Small"
+  Transform {
+    Location {
+      X: -261.702393
+      Y: -185.602844
+    }
+    Rotation {
+      Yaw: -3.05175563e-05
+    }
+    Scale {
+      X: 0.2
+      Y: 0.2
+      Z: 1.44
+    }
+  }
+  ParentId: 11830267085229292233
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail3:id"
+      AssetReference {
+        Id: 15007266117947014902
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail3:utile"
+      Float: 0.25
+    }
+    Overrides {
+      Name: "ma:Shared_Detail3:vtile"
+      Float: 1.8
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7576540203508348522
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 8894614092301830019
+  Name: "Fantasy Castle Stairs Spiral Wall 01 - Small"
+  Transform {
+    Location {
+      X: 323.609894
+      Y: 200.428177
+    }
+    Rotation {
+      Yaw: -179.24852
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 1.44
+    }
+  }
+  ParentId: 11830267085229292233
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail3:id"
+      AssetReference {
+        Id: 15007266117947014902
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail3:utile"
+      Float: 0.5
+    }
+    Overrides {
+      Name: "ma:Shared_Detail3:vtile"
+      Float: 1.8
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7576540203508348522
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 537466238163856081
+  Name: "Fantasy Castle Stairs Spiral Wall 01 - Small"
+  Transform {
+    Location {
+      X: 325.085052
+      Y: 199.224747
+    }
+    Rotation {
+      Yaw: -179.253448
+    }
+    Scale {
+      X: 0.2
+      Y: 0.2
+      Z: 1.44
+    }
+  }
+  ParentId: 11830267085229292233
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail3:id"
+      AssetReference {
+        Id: 15007266117947014902
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail3:utile"
+      Float: 0.25
+    }
+    Overrides {
+      Name: "ma:Shared_Detail3:vtile"
+      Float: 1.8
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7576540203508348522
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 4878901140048470372
+  Name: "Whitebox Wall 01"
+  Transform {
+    Location {
+      X: 340.304962
+      Y: 299.930847
+      Z: 73.3967896
+    }
+    Rotation {
+      Yaw: -179.999954
+    }
+    Scale {
+      X: 0.75
+      Y: 1
+      Z: 0.6
+    }
+  }
+  ParentId: 11830267085229292233
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_WallInner:id"
+      AssetReference {
+        Id: 15007266117947014902
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallInner2:id"
+      AssetReference {
+        Id: 15007266117947014902
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13045266873582499720
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 18193997242541130863
+  Name: "Fantasy Castle Stairs Spiral Wall 01 - Small"
+  Transform {
+    Location {
+      X: -261.230316
+      Y: 197.212158
+    }
+    Rotation {
+      Yaw: -89.9999161
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 1.44
+    }
+  }
+  ParentId: 11830267085229292233
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail3:id"
+      AssetReference {
+        Id: 15007266117947014902
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail3:utile"
+      Float: 0.5
+    }
+    Overrides {
+      Name: "ma:Shared_Detail3:vtile"
+      Float: 1.8
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7576540203508348522
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5955393411403378780
+  Name: "Whitebox Wall 01"
+  Transform {
+    Location {
+      X: -362.643585
+      Y: -203.173752
+      Z: 73.3967896
+    }
+    Rotation {
+      Yaw: 89.9998856
+    }
+    Scale {
+      X: 0.5
+      Y: 1
+      Z: 0.6
+    }
+  }
+  ParentId: 11830267085229292233
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_WallInner:id"
+      AssetReference {
+        Id: 15007266117947014902
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallInner2:id"
+      AssetReference {
+        Id: 15007266117947014902
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13045266873582499720
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10782483832587580004
+  Name: "Fantasy Castle Stairs Spiral Wall 01 - Small"
+  Transform {
+    Location {
+      X: -260.007416
+      Y: 198.67157
+    }
+    Rotation {
+      Yaw: -90.0049
+    }
+    Scale {
+      X: 0.2
+      Y: 0.2
+      Z: 1.44
+    }
+  }
+  ParentId: 11830267085229292233
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail3:id"
+      AssetReference {
+        Id: 15007266117947014902
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail3:utile"
+      Float: 0.25
+    }
+    Overrides {
+      Name: "ma:Shared_Detail3:vtile"
+      Float: 1.8
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7576540203508348522
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13394301117306241869
+  Name: "Complete Hut"
+  Transform {
+    Location {
+      X: -30.8327332
+      Y: -6.10276842
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4110411012277116378
   ChildIds: 12560336760686331571
   ChildIds: 14554331023581940768
   ChildIds: 11027771476949183174
@@ -106,6 +882,8 @@ Objects {
   ChildIds: 9765444567287807904
   ChildIds: 4409492661056508467
   ChildIds: 11656237311360216942
+  ChildIds: 3574473272493625980
+  ChildIds: 12776797191342007099
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -117,12 +895,108 @@ Objects {
   }
 }
 Objects {
+  Id: 12776797191342007099
+  Name: "Gem - Radiant Polished"
+  Transform {
+    Location {
+      X: 27.2920971
+      Y: 8.705513
+      Z: 446.378
+    }
+    Rotation {
+      Yaw: 179.999954
+    }
+    Scale {
+      X: 9.4
+      Y: 6.9
+      Z: 5
+    }
+  }
+  ParentId: 13394301117306241869
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2194244818725384012
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11256418275184246555
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3574473272493625980
+  Name: "Door, Rounded Top"
+  Transform {
+    Location {
+      X: -397.28479
+      Y: -81.9390793
+      Z: 75.4499207
+    }
+    Rotation {
+      Yaw: 179.999954
+    }
+    Scale {
+      X: 0.75
+      Y: 0.75
+      Z: 0.75
+    }
+  }
+  ParentId: 13394301117306241869
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 12792287558144180312
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15301289992325954442
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 11656237311360216942
   Name: "Whitebox Wall 01"
   Transform {
     Location {
-      X: -310.316223
-      Y: -294.488434
+      X: -279.483246
+      Y: -288.385406
       Z: 73.3967896
     }
     Rotation {
@@ -133,7 +1007,7 @@ Objects {
       Z: 0.6
     }
   }
-  ParentId: 4110411012277116378
+  ParentId: 13394301117306241869
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -174,11 +1048,11 @@ Objects {
   Name: "Fantasy Castle Stairs Spiral Wall 01 - Small"
   Transform {
     Location {
-      X: 291.248322
-      Y: -191.776215
+      X: 322.080811
+      Y: -185.673325
     }
     Rotation {
-      Yaw: 89.999939
+      Yaw: 89.9999161
     }
     Scale {
       X: 0.3
@@ -186,7 +1060,7 @@ Objects {
       Z: 1.44
     }
   }
-  ParentId: 4110411012277116378
+  ParentId: 13394301117306241869
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail3:id"
@@ -229,12 +1103,12 @@ Objects {
   Name: "Whitebox Wall 01"
   Transform {
     Location {
-      X: 392.676575
-      Y: 208.611481
+      X: 423.509064
+      Y: 214.714111
       Z: 73.3967896
     }
     Rotation {
-      Yaw: -90.0000305
+      Yaw: -90.0000076
     }
     Scale {
       X: 0.5
@@ -242,7 +1116,7 @@ Objects {
       Z: 0.6
     }
   }
-  ParentId: 4110411012277116378
+  ParentId: 13394301117306241869
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -283,11 +1157,11 @@ Objects {
   Name: "Fantasy Castle Stairs Spiral Wall 01 - Small"
   Transform {
     Location {
-      X: 290.025391
-      Y: -193.235199
+      X: 320.85791
+      Y: -187.132309
     }
     Rotation {
-      Yaw: 89.9949722
+      Yaw: 89.9949417
     }
     Scale {
       X: 0.2
@@ -295,7 +1169,7 @@ Objects {
       Z: 1.44
     }
   }
-  ParentId: 4110411012277116378
+  ParentId: 13394301117306241869
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail3:id"
@@ -338,11 +1212,11 @@ Objects {
   Name: "Fantasy Castle Stairs Spiral Wall 01 - Small"
   Transform {
     Location {
-      X: -291.220703
-      Y: -193.083405
+      X: -260.387695
+      Y: -186.98053
     }
     Rotation {
-      Yaw: -3.05175672e-05
+      Yaw: -3.05175563e-05
     }
     Scale {
       X: 0.3
@@ -350,7 +1224,7 @@ Objects {
       Z: 1.44
     }
   }
-  ParentId: 4110411012277116378
+  ParentId: 13394301117306241869
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail3:id"
@@ -393,11 +1267,11 @@ Objects {
   Name: "Fantasy Castle Stairs Spiral Wall 01 - Small"
   Transform {
     Location {
-      X: -292.53537
-      Y: -191.705719
+      X: -261.702393
+      Y: -185.602844
     }
     Rotation {
-      Yaw: -3.05175672e-05
+      Yaw: -3.05175563e-05
     }
     Scale {
       X: 0.2
@@ -405,7 +1279,7 @@ Objects {
       Z: 1.44
     }
   }
-  ParentId: 4110411012277116378
+  ParentId: 13394301117306241869
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail3:id"
@@ -448,8 +1322,8 @@ Objects {
   Name: "Fantasy Castle Stairs Spiral Wall 01 - Small"
   Transform {
     Location {
-      X: 292.777405
-      Y: 194.325531
+      X: 323.609894
+      Y: 200.428177
     }
     Rotation {
       Yaw: -179.24852
@@ -460,7 +1334,7 @@ Objects {
       Z: 1.44
     }
   }
-  ParentId: 4110411012277116378
+  ParentId: 13394301117306241869
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail3:id"
@@ -503,8 +1377,8 @@ Objects {
   Name: "Fantasy Castle Stairs Spiral Wall 01 - Small"
   Transform {
     Location {
-      X: 294.252563
-      Y: 193.122101
+      X: 325.085052
+      Y: 199.224747
     }
     Rotation {
       Yaw: -179.253448
@@ -515,7 +1389,7 @@ Objects {
       Z: 1.44
     }
   }
-  ParentId: 4110411012277116378
+  ParentId: 13394301117306241869
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail3:id"
@@ -558,8 +1432,8 @@ Objects {
   Name: "Whitebox Wall 01"
   Transform {
     Location {
-      X: 309.472473
-      Y: 293.828339
+      X: 340.304962
+      Y: 299.930847
       Z: 73.3967896
     }
     Rotation {
@@ -571,7 +1445,7 @@ Objects {
       Z: 0.6
     }
   }
-  ParentId: 4110411012277116378
+  ParentId: 13394301117306241869
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -612,11 +1486,11 @@ Objects {
   Name: "Fantasy Castle Stairs Spiral Wall 01 - Small"
   Transform {
     Location {
-      X: -292.063324
-      Y: 191.109528
+      X: -261.230316
+      Y: 197.212158
     }
     Rotation {
-      Yaw: -89.9999466
+      Yaw: -89.9999161
     }
     Scale {
       X: 0.3
@@ -624,7 +1498,7 @@ Objects {
       Z: 1.44
     }
   }
-  ParentId: 4110411012277116378
+  ParentId: 13394301117306241869
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail3:id"
@@ -667,12 +1541,12 @@ Objects {
   Name: "Whitebox Wall 01"
   Transform {
     Location {
-      X: -393.476563
-      Y: -209.276642
+      X: -362.643585
+      Y: -203.173752
       Z: 73.3967896
     }
     Rotation {
-      Yaw: 89.9999161
+      Yaw: 89.9998856
     }
     Scale {
       X: 0.5
@@ -680,7 +1554,7 @@ Objects {
       Z: 0.6
     }
   }
-  ParentId: 4110411012277116378
+  ParentId: 13394301117306241869
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -721,11 +1595,11 @@ Objects {
   Name: "Fantasy Castle Stairs Spiral Wall 01 - Small"
   Transform {
     Location {
-      X: -290.840393
-      Y: 192.568939
+      X: -260.007416
+      Y: 198.67157
     }
     Rotation {
-      Yaw: -90.0049133
+      Yaw: -90.0049
     }
     Scale {
       X: 0.2
@@ -733,7 +1607,7 @@ Objects {
       Z: 1.44
     }
   }
-  ParentId: 4110411012277116378
+  ParentId: 13394301117306241869
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail3:id"

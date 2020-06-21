@@ -45318,7 +45318,7 @@ Objects {
       Z: 20.5
     }
     Rotation {
-      Yaw: -84.9999
+      Yaw: -84.9999084
       Roll: 3.71391397e-05
     }
     Scale {
@@ -51636,7 +51636,7 @@ Objects {
       Z: 20.5
     }
     Rotation {
-      Yaw: -84.9999
+      Yaw: -84.9999084
       Roll: 3.71391397e-05
     }
     Scale {
@@ -52304,7 +52304,7 @@ Objects {
       Z: 20.5
     }
     Rotation {
-      Yaw: -84.9998932
+      Yaw: -84.9998779
       Roll: 3.71391434e-05
     }
     Scale {
@@ -121217,6 +121217,7 @@ Objects {
   Transform {
     Location {
       X: 100
+      Y: 240
       Z: 180
     }
     Rotation {
@@ -121514,6 +121515,7 @@ Objects {
       Name: "cs:MoveTo"
       Vector {
         X: 400
+        Y: 240
         Z: 180
       }
     }
