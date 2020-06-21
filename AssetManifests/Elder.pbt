@@ -7,12 +7,3 @@ Assets {
     AssetId: "npc_human_gal_basic_003_ref"
   }
 }
-Assets {
-  Id: 34409949585250193
-  Name: "Carpet 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_carpets_001_uv"
-  }
-}
