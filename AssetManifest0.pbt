@@ -8,15 +8,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16910278292812118833
-  Name: "Sun Light"
-  PlatformAssetType: 6
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "CORESKY_SunLight"
-  }
-}
-Assets {
   Id: 16335829303360349604
   Name: "Cone"
   PlatformAssetType: 1
@@ -41,6 +32,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Icon_Chicken"
+  }
+}
+Assets {
+  Id: 15445660053533024282
+  Name: "Ice Opaque Ground"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxmi_ice_opaque_ground"
   }
 }
 Assets {
@@ -80,15 +80,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11515840070784317904
-  Name: "Skylight"
-  PlatformAssetType: 6
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "CORESKY_Skylight"
-  }
-}
-Assets {
   Id: 9882186229089397285
   Name: "Coral Spikes Small"
   PlatformAssetType: 1
@@ -115,6 +106,7 @@ Assets {
     AssetId: "sm_arcade_cube_001"
   }
 }
+
 Assets {
   Id: 8119411702946201732
   Name: "Coral Spikes Big"
@@ -122,15 +114,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_coral_spike_big_01"
-  }
-}
-Assets {
-  Id: 7887238662729938253
-  Name: "Sky Dome"
-  PlatformAssetType: 6
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "CORESKY_Sky"
   }
 }
 Assets {

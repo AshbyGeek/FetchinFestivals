@@ -62,12 +62,14 @@ function Tick(deltaTime)
     if not Object.IsValid(OBJECT) then return end
     if not targetValue then return end
     if isCompleted then return end
+    if isIterationComplete then return end
 
     currentValue = GetObjectCurrentValue()
 
     if IsValueClose(targetValue, currentValue) then
     	BroadcastEvent(ON_STOPPED_EVENT)
     	currentCount = currentCount + 1
+    	isIterationComplete = true
 
     	if currentCount < REPEAT_COUNT or REPEAT_COUNT <= 0 then
 		    if REVERSE_EVERY_OTHER_REPEAT then
@@ -105,7 +107,9 @@ function StartActionInternal()
     	currentCount = 0
     	isCompleted = false
     end
-    		
+    
+    isIterationComplete = false
+    
 	if REVERSE then
 		targetValue = startValue
 	else

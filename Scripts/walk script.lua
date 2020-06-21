@@ -1,3 +1,5 @@
+local propStartEventName = script:GetCustomProperty("StartEventName")
+local propStopEventName = script:GetCustomProperty("StopEventName")
 
 local parent = script.parent
 
@@ -9,5 +11,5 @@ function StopWalkAnimation()
 	parent.animationStance = "unarmed_idle_relaxed"
 end
 
-Events.Connect("StartWalk", StartWalkAnimation)
-Events.Connect("StopWalk", StopWalkAnimation)
+Events.Connect(propStartEventName, StartWalkAnimation)
+Events.Connect(propStopEventName, StopWalkAnimation)
