@@ -44,6 +44,7 @@ Assets {
     OwnerAccountId: "d97586e1f850481da13ee26d5cbddc02"
     OwnerName: "Chris"
     Version: "1.0.0"
+    Description: "A quick component that can be used to display victory messgaes, if a player gets more than a certain amount of a resource.\r\n\r\nWorks with the Easy Resource Pickup Challenge, or anything that operates off of player.SetResource."
   }
-  SerializationVersion: 60
+  SerializationVersion: 61
 }

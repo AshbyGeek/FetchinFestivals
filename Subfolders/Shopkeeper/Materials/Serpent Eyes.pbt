@@ -2,7 +2,7 @@ Assets {
   Id: 2184931616856215335
   Name: "Serpent Eyes"
   PlatformAssetType: 13
-  SerializationVersion: 60
+  SerializationVersion: 61
   CustomMaterialAsset {
     BaseMaterialId: 18261684201640294455
     ParameterOverrides {
