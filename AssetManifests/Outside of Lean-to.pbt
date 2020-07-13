@@ -34,3 +34,12 @@ Assets {
     AssetId: "sm_urb_table_dining_001"
   }
 }
+Assets {
+  Id: 1388574507377112075
+  Name: "Icon Player Swim"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_PlayerSwim"
+  }
+}
