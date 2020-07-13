@@ -220,10 +220,12 @@ function IsValueClose(value1, value2)
 		local q1 = Quaternion.New(value1)
 		local q2 = Quaternion.New(value2)
 		local dif = q1:GetForwardVector() - q2:GetForwardVector()
-		return dif.size < 0.0001
+        local difSize = dif.size
+		return difSize < 0.0001
 	else
-		local difference = value1 - value2
-		return difference.size < 0.0001
+        local difference = value1 - value2
+        local difSize = difference.size
+		return difSize < 0.0001
 	end
 end
 

@@ -186,7 +186,7 @@ Objects {
   Name: "Secondary House"
   Transform {
     Location {
-      X: 3064.52392
+      X: 3064.52393
       Y: -144.357956
       Z: -527.587
     }

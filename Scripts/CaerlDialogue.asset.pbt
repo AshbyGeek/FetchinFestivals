@@ -1,5 +1,5 @@
-Id: 13602507573556161405
-Name: "DialogueRootScript"
+Id: 9074368827409866107
+Name: "CaerlDialogue"
 PlatformAssetType: 3
 TextAsset {
   CustomParameters {

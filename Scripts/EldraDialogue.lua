@@ -9,7 +9,7 @@ local tree = {
 			{speaker = 0, text = "If you fail, I won't be surprised."}
 		},
 		optionB = {
-			text = "no"
+			text = "no",
 			{speaker = 0, text = "Don't make eye contact if you're not feeling helpful."}
 		}
 	},
