@@ -61179,7 +61179,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719726
+      X: 149.719727
       Y: -399.656189
     }
     Rotation {
@@ -62440,7 +62440,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719726
+      X: 149.719727
       Y: -240.012222
     }
     Rotation {
@@ -63701,7 +63701,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719726
+      X: 149.719727
       Y: -80.9106598
     }
     Rotation {
@@ -64962,7 +64962,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719726
+      X: 149.719727
       Y: -557.512451
     }
     Rotation {
@@ -66223,7 +66223,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719726
+      X: 149.719727
       Y: -716.613892
     }
     Rotation {
@@ -67484,7 +67484,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719726
+      X: 149.719727
       Y: -876.257935
     }
     Rotation {
@@ -91443,7 +91443,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719726
+      X: 149.719727
       Y: 557.331543
     }
     Rotation {
@@ -92704,7 +92704,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719726
+      X: 149.719727
       Y: 716.975525
     }
     Rotation {
@@ -93965,7 +93965,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719726
+      X: 149.719727
       Y: 876.077087
     }
     Rotation {
@@ -95226,7 +95226,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719726
+      X: 149.719727
       Y: 399.475342
     }
     Rotation {
@@ -96487,7 +96487,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719726
+      X: 149.719727
       Y: 240.373825
     }
     Rotation {
@@ -97748,7 +97748,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719726
+      X: 149.719727
       Y: 80.7298737
     }
     Rotation {
@@ -122445,7 +122445,7 @@ Objects {
     Location {
       X: 1640.89282
       Y: -987.709229
-      Z: 195.438476
+      Z: 195.438477
     }
     Rotation {
       Pitch: 90
@@ -122484,7 +122484,7 @@ Objects {
   Name: "Simple Crate 150cm"
   Transform {
     Location {
-      X: 1651.00976
+      X: 1651.00977
       Y: -943.157898
       Z: 75.4497
     }

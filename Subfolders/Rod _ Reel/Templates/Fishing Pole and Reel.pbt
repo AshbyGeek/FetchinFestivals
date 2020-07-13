@@ -112,7 +112,7 @@ Assets {
         Transform {
           Location {
             X: -2.31640625
-            Y: -6.10351562e-05
+            Y: -6.10351563e-05
           }
           Rotation {
           }
@@ -143,7 +143,7 @@ Assets {
         Name: "Capsule"
         Transform {
           Location {
-            Y: 6.10351562e-05
+            Y: 6.10351563e-05
             Z: -7.348526
           }
           Rotation {
@@ -201,7 +201,7 @@ Assets {
         Name: "Cylinder - Chamfered Small Polished"
         Transform {
           Location {
-            Y: 6.10351562e-05
+            Y: 6.10351563e-05
             Z: -1.13231659
           }
           Rotation {
@@ -259,7 +259,7 @@ Assets {
         Name: "Cylinder - Chamfered Small Polished"
         Transform {
           Location {
-            Y: 6.10351562e-05
+            Y: 6.10351563e-05
             Z: 4.07727051
           }
           Rotation {
@@ -317,7 +317,7 @@ Assets {
         Name: "Cylinder - Chamfered Small Polished"
         Transform {
           Location {
-            Y: 6.10351562e-05
+            Y: 6.10351563e-05
             Z: 21.0823059
           }
           Rotation {
@@ -363,7 +363,7 @@ Assets {
         Name: "Cylinder - Chamfered Small Polished"
         Transform {
           Location {
-            Y: 6.10351562e-05
+            Y: 6.10351563e-05
             Z: 12.7272034
           }
           Rotation {

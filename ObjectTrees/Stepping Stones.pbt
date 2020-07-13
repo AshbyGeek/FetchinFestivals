@@ -117,7 +117,7 @@ Objects {
   Name: "Raft"
   Transform {
     Location {
-      X: 3031.35644
+      X: 3031.35645
       Y: -134.609741
       Z: -527.587
     }
