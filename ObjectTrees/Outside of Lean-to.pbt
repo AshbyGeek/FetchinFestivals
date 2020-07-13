@@ -1,13 +1,41 @@
 Name: "Outside of Lean-to"
 RootId: 3944233438676570141
 Objects {
+  Id: 8458662221404898427
+  Name: "Elder"
+  Transform {
+    Location {
+      X: -3300
+      Y: -800
+      Z: 150
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3944233438676570141
+  ChildIds: 4585678770149217123
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
   Id: 4585678770149217123
   Name: "Human Guy"
   Transform {
     Location {
-      X: -3320.49756
-      Y: -783.804443
-      Z: 128.619507
+      X: -20.4975586
+      Y: 16.1955566
+      Z: -21.3804932
     }
     Rotation {
       Yaw: 125.293488
@@ -18,7 +46,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3944233438676570141
+  ParentId: 8458662221404898427
+  ChildIds: 16643919052266765519
+  ChildIds: 499695186470816125
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -42,6 +72,81 @@ Objects {
       PlayOnStartAnimation {
         PlaybackRate: 1
       }
+    }
+  }
+}
+Objects {
+  Id: 499695186470816125
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 633.234375
+      Y: 3331.74463
+      Z: 348.497
+    }
+    Rotation {
+      Yaw: -125.293488
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4585678770149217123
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    Interactable: true
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 16643919052266765519
+  Name: "EldraDialogue"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4585678770149217123
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 1388574507377112075
+      }
+    }
+    Overrides {
+      Name: "cs:CharacterName"
+      String: "Eldra"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 17018608761516673762
     }
   }
 }

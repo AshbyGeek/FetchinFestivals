@@ -44,6 +44,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9926902032847767173
+  Name: "Icon Wind"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Wind"
+  }
+}
+Assets {
   Id: 8435138641053284605
   Name: "Small Open Crate"
   PlatformAssetType: 1

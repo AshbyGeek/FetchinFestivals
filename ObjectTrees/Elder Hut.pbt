@@ -264,7 +264,7 @@ Objects {
   Name: "Decal Bones 02"
   Transform {
     Location {
-      X: 135.973144
+      X: 135.973145
       Y: 400.966
       Z: -2.53692627
     }
@@ -334,7 +334,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 99.8476562
+            X: 99.8476563
             Y: 408.854523
             Z: 26.3891907
           }
@@ -597,7 +597,7 @@ Objects {
   Name: "Craftsman Roof 01 Corner Out"
   Transform {
     Location {
-      X: 367.185058
+      X: 367.185059
       Y: -395.843506
       Z: -85.4986572
     }

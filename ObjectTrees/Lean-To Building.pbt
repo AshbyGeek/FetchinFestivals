@@ -7,7 +7,7 @@ Objects {
     Location {
       X: 5589.13281
       Y: -1239.53418
-      Z: 35.8500976
+      Z: 35.8500977
     }
     Rotation {
     }
@@ -128,7 +128,7 @@ Objects {
   Name: "Wooden Barrel"
   Transform {
     Location {
-      X: 159.976562
+      X: 159.976563
       Y: -162.823975
     }
     Rotation {

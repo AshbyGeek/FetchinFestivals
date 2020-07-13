@@ -131,5 +131,5 @@ Assets {
       AssetId: "templates_Knife_001"
     }
   }
-  SerializationVersion: 60
+  SerializationVersion: 61
 }

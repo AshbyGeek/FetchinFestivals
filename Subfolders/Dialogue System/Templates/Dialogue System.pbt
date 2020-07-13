@@ -46,6 +46,7 @@ Assets {
     OwnerAccountId: "b45e35194e6946f88051d5119adc0a41"
     OwnerName: "Seth"
     Version: "1.3.0"
+    Description: "A functional dialogue system that can be used in your games. \r\n\r\nNote: This is a Work in Progress (WIP) so the functionality is subject to change\r\n\r\nFeatures:\r\n-Example dialogue set up to demonstrate how to use the system\r\n-Conversation between 2 characters\r\n-Swapping of portraits in the dialogue\r\n-Displaying the character on the left or right side of the screen\r\n-Multiple lines of dialogue\r\n-Advance on click\r\n-Clickable dialogue options\r\n-Branching dialogue\r\n-Conditionally displayed dialogue and dialogue options"
   }
-  SerializationVersion: 60
+  SerializationVersion: 61
 }

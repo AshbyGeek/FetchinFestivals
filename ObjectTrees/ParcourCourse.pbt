@@ -410,7 +410,7 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 3425.72558
+      X: 3425.72559
       Y: -785.771484
       Z: 1128.45471
     }

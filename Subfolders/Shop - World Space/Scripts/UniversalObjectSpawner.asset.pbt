@@ -3,4 +3,4 @@ Name: "UniversalObjectSpawner"
 PlatformAssetType: 3
 TextAsset {
 }
-SerializationVersion: 60
+SerializationVersion: 61

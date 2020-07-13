@@ -46,6 +46,7 @@ Assets {
     OwnerAccountId: "8aa6e0c558be4a1c98e80229b73ffeb9"
     OwnerName: "Dracowolfie"
     Version: "1.0.0"
+    Description: "This is very much still a WIP, but it does function completely. \r\n\r\nThis template comes with the basic models for the shopkeer and table, as well as all the UI, and is scripted to work fully. You can walk up to the shopkeeper and purchase a potion (does nothing right now) and a hat (one TV hat available).\r\n\r\nPress 1 on the keyboard to increase your currency amount, as a dev-hack.\r\n\r\n----\r\n\r\nThis is a fully functional store! It comes with a README, so downlaod and check that out for more info. This uses persistence and is entirely drag-and-drop, meaning no programming necessary."
   }
-  SerializationVersion: 60
+  SerializationVersion: 61
 }

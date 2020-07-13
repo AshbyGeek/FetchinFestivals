@@ -2,7 +2,7 @@ Assets {
   Id: 7844352894034477570
   Name: "Custom Rope"
   PlatformAssetType: 13
-  SerializationVersion: 60
+  SerializationVersion: 61
   CustomMaterialAsset {
     BaseMaterialId: 3090596827184957478
     ParameterOverrides {

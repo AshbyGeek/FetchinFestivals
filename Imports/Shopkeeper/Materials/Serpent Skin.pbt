@@ -2,7 +2,7 @@ Assets {
   Id: 2756779626397963235
   Name: "Serpent Skin"
   PlatformAssetType: 13
-  SerializationVersion: 60
+  SerializationVersion: 61
   CustomMaterialAsset {
     BaseMaterialId: 18261684201640294455
     ParameterOverrides {

@@ -1,13 +1,13 @@
 Name: "Puldark"
 RootId: 10181509606713714935
 Objects {
-  Id: 10228131311875963579
+  Id: 16988638212833991869
   Name: "Human Gal"
   Transform {
     Location {
       X: 100
-      Y: 240
-      Z: 180
+      Y: 250
+      Z: 200
     }
     Rotation {
     }
@@ -18,10 +18,37 @@ Objects {
     }
   }
   ParentId: 10181509606713714935
+  ChildIds: 10228131311875963579
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 10228131311875963579
+  Name: "Human Gal"
+  Transform {
+    Location {
+      X: 0.000375270844
+      Y: -10.0005
+      Z: -20
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16988638212833991869
   ChildIds: 9004193827057754131
   ChildIds: 11498022777835552758
   ChildIds: 3110416614818279898
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -214,7 +241,6 @@ Objects {
       String: "Target rotation for the object to rotate to."
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -261,7 +287,6 @@ Objects {
       String: "StopWalkGirl"
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -447,7 +472,6 @@ Objects {
       String: "Random delay time between each action repeat."
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -61155,7 +61179,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719726
+      X: 149.719727
       Y: -399.656189
     }
     Rotation {
@@ -62416,7 +62440,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719726
+      X: 149.719727
       Y: -240.012222
     }
     Rotation {
@@ -63677,7 +63701,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719726
+      X: 149.719727
       Y: -80.9106598
     }
     Rotation {
@@ -64938,7 +64962,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719726
+      X: 149.719727
       Y: -557.512451
     }
     Rotation {
@@ -66199,7 +66223,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719726
+      X: 149.719727
       Y: -716.613892
     }
     Rotation {
@@ -67460,7 +67484,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719726
+      X: 149.719727
       Y: -876.257935
     }
     Rotation {
@@ -91419,7 +91443,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719726
+      X: 149.719727
       Y: 557.331543
     }
     Rotation {
@@ -92680,7 +92704,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719726
+      X: 149.719727
       Y: 716.975525
     }
     Rotation {
@@ -93941,7 +93965,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719726
+      X: 149.719727
       Y: 876.077087
     }
     Rotation {
@@ -95202,7 +95226,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719726
+      X: 149.719727
       Y: 399.475342
     }
     Rotation {
@@ -96463,7 +96487,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719726
+      X: 149.719727
       Y: 240.373825
     }
     Rotation {
@@ -97724,7 +97748,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719726
+      X: 149.719727
       Y: 80.7298737
     }
     Rotation {
@@ -121679,27 +121703,54 @@ Objects {
   }
 }
 Objects {
-  Id: 17532984952721758229
-  Name: "Guappy"
+  Id: 6865327062995837569
+  Name: "Caerl"
   Transform {
     Location {
-      X: -270
-      Y: -100
+      X: -257.614075
+      Y: -543.434448
       Z: 180
     }
     Rotation {
-      Yaw: 89.9999847
+      Yaw: 89.9999771
     }
     Scale {
-      X: 1.05
-      Y: 1.05
-      Z: 1.05
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 10181509606713714935
+  ChildIds: 17532984952721758229
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 17532984952721758229
+  Name: "Caerl"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6865327062995837569
   ChildIds: 7228563695829473673
   ChildIds: 4595182980039797558
   ChildIds: 2503511283051795524
+  ChildIds: 17694182298038409844
+  ChildIds: 17881723457397188383
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail1:id"
@@ -121747,7 +121798,6 @@ Objects {
       }
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -121775,21 +121825,88 @@ Objects {
   }
 }
 Objects {
+  Id: 17881723457397188383
+  Name: "Trigger"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17532984952721758229
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    Interactable: true
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 17694182298038409844
+  Name: "CaerlDialogue"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17532984952721758229
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:CharacterName"
+      String: "Caerl"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 9926902032847767173
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 9074368827409866107
+    }
+  }
+}
+Objects {
   Id: 2503511283051795524
   Name: "Object Rotator"
   Transform {
     Location {
-      X: 190.476196
-      Y: 95.2381
-      Z: -95.2381
     }
     Rotation {
-      Yaw: -150.6073
     }
     Scale {
-      X: 0.952381
-      Y: 0.952381
-      Z: 0.952381
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 17532984952721758229
@@ -121803,7 +121920,7 @@ Objects {
     Overrides {
       Name: "cs:RotateTo"
       Rotator {
-        Yaw: 270
+        Yaw: 180
       }
     }
     Overrides {
@@ -121941,7 +122058,6 @@ Objects {
       String: "Target rotation for the object to rotate to."
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -121966,16 +122082,13 @@ Objects {
   Name: "walk script"
   Transform {
     Location {
-      X: 190.476196
-      Y: 95.2381
-      Z: -95.2381
     }
     Rotation {
     }
     Scale {
-      X: 0.952381
-      Y: 0.952381
-      Z: 0.952381
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 17532984952721758229
@@ -121989,7 +122102,6 @@ Objects {
       String: "StopWalkGuy"
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -122007,17 +122119,13 @@ Objects {
   Name: "Pacing"
   Transform {
     Location {
-      X: 190.476196
-      Y: 428.571442
-      Z: -100.000008
     }
     Rotation {
-      Roll: 89.9999771
     }
     Scale {
-      X: 0.952381
-      Y: 0.952381
-      Z: 0.952381
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 17532984952721758229
@@ -122031,9 +122139,7 @@ Objects {
     Overrides {
       Name: "cs:MoveTo"
       Vector {
-        X: -270
-        Y: 600
-        Z: 180
+        X: 500
       }
     }
     Overrides {
@@ -122175,7 +122281,6 @@ Objects {
       String: "Random delay time between each action repeat."
     }
   }
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -122340,7 +122445,7 @@ Objects {
     Location {
       X: 1640.89282
       Y: -987.709229
-      Z: 195.438476
+      Z: 195.438477
     }
     Rotation {
       Pitch: 90
@@ -122379,7 +122484,7 @@ Objects {
   Name: "Simple Crate 150cm"
   Transform {
     Location {
-      X: 1651.00976
+      X: 1651.00977
       Y: -943.157898
       Z: 75.4497
     }

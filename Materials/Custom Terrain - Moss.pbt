@@ -2,7 +2,7 @@ Assets {
   Id: 8925453470142554322
   Name: "Custom Terrain - Underwater Sea Floor"
   PlatformAssetType: 13
-  SerializationVersion: 60
+  SerializationVersion: 61
   CustomMaterialAsset {
     BaseMaterialId: 742538038166768218
     ParameterOverrides {

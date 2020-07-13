@@ -44,6 +44,7 @@ Assets {
     OwnerAccountId: "aabffd57e2814ff1bc7f80f5fd32b5a4"
     OwnerName: "Chipnertkj"
     Version: "1.0.0"
+    Description: "A singular stick. Magnificent."
   }
-  SerializationVersion: 60
+  SerializationVersion: 61
 }

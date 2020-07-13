@@ -461,5 +461,5 @@ Assets {
       AssetId: "Modern_Weapon_-_Pistol_01"
     }
   }
-  SerializationVersion: 60
+  SerializationVersion: 61
 }

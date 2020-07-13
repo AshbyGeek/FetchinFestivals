@@ -44,6 +44,7 @@ Assets {
     OwnerAccountId: "1f0588bf88d14c258d7384902f71f132"
     OwnerName: "Daddio"
     Version: "1.0.0"
+    Description: "Maybe someone can make a fishing game.  Hmmm, who could that be?"
   }
-  SerializationVersion: 60
+  SerializationVersion: 61
 }

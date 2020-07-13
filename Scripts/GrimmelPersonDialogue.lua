@@ -2,7 +2,7 @@ local dialogueBase = require("BCC5D091A8602B7D:DialogueRootScript")
 
 local tree = {
 	{setFlag = "TalkedToGrimmelPerson"},
-	{speaker = 0, text = "Haven't seen you around here before. You should speak with Codnor."},
+	{speaker = 0, text = "Haven't seen you around here before. You should speak with Eldra."},
 	{
 		optionA = {
 			text = "Okay",
