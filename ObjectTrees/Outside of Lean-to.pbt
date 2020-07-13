@@ -30,7 +30,7 @@ Objects {
 }
 Objects {
   Id: 4585678770149217123
-  Name: "Human Guy"
+  Name: "Eldra"
   Transform {
     Location {
       X: -20.4975586
@@ -80,12 +80,8 @@ Objects {
   Name: "Trigger"
   Transform {
     Location {
-      X: 633.234375
-      Y: 3331.74463
-      Z: 348.497
     }
     Rotation {
-      Yaw: -125.293488
     }
     Scale {
       X: 1

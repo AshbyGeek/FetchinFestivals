@@ -270,6 +270,18 @@ Objects {
       }
     }
     ParameterOverrideMap {
+      key: 4594321215289236238
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -150
+            Z: 17.0982666
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 9217504216430338460
       value {
         Overrides {
@@ -285,6 +297,12 @@ Objects {
           Name: "ma:Shared_BaseMaterial:id"
           AssetReference {
             Id: 3830888102854223075
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 169.901367
           }
         }
       }
