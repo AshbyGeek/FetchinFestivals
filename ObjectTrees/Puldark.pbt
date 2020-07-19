@@ -2,7 +2,7 @@ Name: "Puldark"
 RootId: 10181509606713714935
 Objects {
   Id: 16988638212833991869
-  Name: "Human Gal"
+  Name: "Human Gal in House"
   Transform {
     Location {
       X: 100
@@ -61179,7 +61179,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719727
+      X: 149.719726
       Y: -399.656189
     }
     Rotation {
@@ -62440,7 +62440,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719727
+      X: 149.719726
       Y: -240.012222
     }
     Rotation {
@@ -63701,7 +63701,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719727
+      X: 149.719726
       Y: -80.9106598
     }
     Rotation {
@@ -64962,7 +64962,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719727
+      X: 149.719726
       Y: -557.512451
     }
     Rotation {
@@ -66223,7 +66223,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719727
+      X: 149.719726
       Y: -716.613892
     }
     Rotation {
@@ -67484,7 +67484,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719727
+      X: 149.719726
       Y: -876.257935
     }
     Rotation {
@@ -91443,7 +91443,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719727
+      X: 149.719726
       Y: 557.331543
     }
     Rotation {
@@ -92704,7 +92704,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719727
+      X: 149.719726
       Y: 716.975525
     }
     Rotation {
@@ -93965,7 +93965,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719727
+      X: 149.719726
       Y: 876.077087
     }
     Rotation {
@@ -95226,7 +95226,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719727
+      X: 149.719726
       Y: 399.475342
     }
     Rotation {
@@ -96487,7 +96487,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719727
+      X: 149.719726
       Y: 240.373825
     }
     Rotation {
@@ -97748,7 +97748,7 @@ Objects {
   Name: "Raft Group"
   Transform {
     Location {
-      X: 149.719727
+      X: 149.719726
       Y: 80.7298737
     }
     Rotation {
@@ -121703,6 +121703,195 @@ Objects {
   }
 }
 Objects {
+  Id: 5992671605175055484
+  Name: "Villager in Chair"
+  Transform {
+    Location {
+      X: 28.7286377
+      Y: -687.71106
+      Z: 181.438324
+    }
+    Rotation {
+      Yaw: -88.4604416
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10181509606713714935
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.28125
+        G: 0.178656
+        B: 0.00585936941
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 4380596013213651812
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:utile"
+      Float: 0.272414327
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:vtile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_Detail2:id"
+      AssetReference {
+        Id: 11093615469096490417
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail2:utile"
+      Float: 0.125
+    }
+    Overrides {
+      Name: "ma:Shared_Detail2:vtile"
+      Float: 0.125
+    }
+    Overrides {
+      Name: "ma:Shared_Detail2:color"
+      Color {
+        R: 0.171413854
+        G: 0.247611791
+        B: 0.369791657
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 822441479322256650
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    AnimatedMesh {
+      AnimationStance: "unarmed_idle_relaxed"
+      AnimationStancePlaybackRate: 1
+      AnimationStanceShouldLoop: true
+      AnimationPlaybackRateMultiplier: 1
+      PlayOnStartAnimation {
+        Animation: "unarmed_sit_chair_upright"
+        PlaybackRate: 1
+        ShouldLoop: true
+      }
+    }
+  }
+}
+Objects {
+  Id: 8630461833456061410
+  Name: "Villager in Garden"
+  Transform {
+    Location {
+      X: 1673.70081
+      Y: -271.18515
+      Z: 220.655792
+    }
+    Rotation {
+      Yaw: -11.6959076
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10181509606713714935
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail2:id"
+      AssetReference {
+        Id: 11093615469096490417
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail2:utile"
+      Float: 0.125
+    }
+    Overrides {
+      Name: "ma:Shared_Detail2:vtile"
+      Float: 0.125
+    }
+    Overrides {
+      Name: "ma:Shared_Detail2:color"
+      Color {
+        R: 0.539999962
+        G: 0.429139048
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 0.844702
+        B: 0.65
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 1186750986706855224
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:utile"
+      Float: 7.62473726
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:vtile"
+      Float: 0.320917726
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5870787091392188731
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    AnimatedMesh {
+      AnimationStance: "unarmed_idle_relaxed"
+      AnimationStancePlaybackRate: 1
+      AnimationStanceShouldLoop: true
+      AnimationPlaybackRateMultiplier: 1
+      PlayOnStartAnimation {
+        Animation: "unarmed_sit_ground_crossed"
+        PlaybackRate: 1
+        ShouldLoop: true
+      }
+    }
+  }
+}
+Objects {
   Id: 6865327062995837569
   Name: "Caerl"
   Transform {
@@ -122445,7 +122634,7 @@ Objects {
     Location {
       X: 1640.89282
       Y: -987.709229
-      Z: 195.438477
+      Z: 195.438476
     }
     Rotation {
       Pitch: 90
@@ -122484,7 +122673,7 @@ Objects {
   Name: "Simple Crate 150cm"
   Transform {
     Location {
-      X: 1651.00977
+      X: 1651.00976
       Y: -943.157898
       Z: 75.4497
     }

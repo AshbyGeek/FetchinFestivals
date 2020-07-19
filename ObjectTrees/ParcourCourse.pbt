@@ -376,41 +376,11 @@ Objects {
   }
 }
 Objects {
-  Id: 2587355246784994221
-  Name: "Fishing Pole"
-  Transform {
-    Location {
-      X: 3981.41553
-      Y: 318.19751
-      Z: 223.452362
-    }
-    Rotation {
-      Pitch: -37.622509
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 5695791373347504104
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Fishing Pole_3"
-  }
-}
-Objects {
   Id: 3865076833213601016
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 3425.72559
+      X: 3425.72558
       Y: -785.771484
       Z: 1128.45471
     }

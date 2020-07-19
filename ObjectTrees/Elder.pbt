@@ -1,6 +1,36 @@
 Name: "Elder"
 RootId: 12559355657407543728
 Objects {
+  Id: 2587355246784994221
+  Name: "Fishing Pole"
+  Transform {
+    Location {
+      X: 831.969726
+      Y: -867.532
+      Z: 36.6966553
+    }
+    Rotation {
+      Pitch: -37.6224976
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12559355657407543728
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Fishing Pole_3"
+  }
+}
+Objects {
   Id: 16985973740069538308
   Name: "NewFolder"
   Transform {
@@ -54,9 +84,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 440.740723
-            Y: -1211.61377
-            Z: 506.695435
+            X: 475.983398
+            Y: -1194.05225
+            Z: 418.249878
           }
         }
         Overrides {
@@ -70,9 +100,9 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -7.31781
-            Yaw: 177.283768
-            Roll: -159.57106
+            Pitch: -1.88937378
+            Yaw: 89.9165497
+            Roll: -91.9808655
           }
         }
       }
@@ -87,7 +117,7 @@ Objects {
   Name: "Human Gal"
   Transform {
     Location {
-      X: 445.832031
+      X: 468.601074
       Y: -1225.71021
       Z: 491.178589
     }
@@ -121,7 +151,9 @@ Objects {
       AnimationStanceShouldLoop: true
       AnimationPlaybackRateMultiplier: 1
       PlayOnStartAnimation {
+        Animation: "unarmed_sit_ground_ledge"
         PlaybackRate: 1
+        ShouldLoop: true
       }
     }
   }

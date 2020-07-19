@@ -107,6 +107,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4380596013213651812
+  Name: "Wallpaper Chevron 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gen_wallpaper_004"
+  }
+}
+Assets {
   Id: 3828370507767554417
   Name: "Food Fruit 01"
   PlatformAssetType: 2
@@ -122,5 +131,23 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_crate_simple_150cm_001"
+  }
+}
+Assets {
+  Id: 1186750986706855224
+  Name: "Wallpaper Hearts 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wallpaper_hearts_001_uv"
+  }
+}
+Assets {
+  Id: 822441479322256650
+  Name: "Human Gal"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_human_gal_basic_001_ref"
   }
 }
